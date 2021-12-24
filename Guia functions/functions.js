@@ -24,7 +24,6 @@ const primo = (n1) => {
     return r;
 }
 
-export function primo(n1){
-    return r;
-}
+
+
 
