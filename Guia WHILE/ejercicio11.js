@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 11 - Guia WHILE</title>    
-</headI>
-<body>
-    <script>
+<script>
         var cp = 0;
         var cn = 0;
         var cpares = 0;
@@ -49,7 +40,4 @@
         document.write ('La cantidad de numeros pares ingresados fue: ',cpares);
         document.write("<br />");
         document.write('La cantidad de numeros primos ingresados fue: ',cprimos);
-
-    </script>    
-</body>
-</html>
+</script>    

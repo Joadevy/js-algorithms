@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 10 - Guia WHILE</title>
-</head>
-<body>
-    <script>
+<script>
         var bp = false;
         var bn = false;
         var num;
@@ -45,7 +36,4 @@
         document.write('El mayor de los negativos ingresados fue: ', maxn);
         document.write("<br />");
         document.write('El menor de los positivos ingresados fue: ', minp);
-
-    </script>
-</body>
-</html>
+</script>

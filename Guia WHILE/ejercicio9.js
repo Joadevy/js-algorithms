@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 9 - Guia WHILE</title>
-</head>
-<body>
-    <script>
+<script>
         var Menor;
         var smenor;
         var posm=0;
@@ -40,6 +31,4 @@
         document.write("<br />");
         document.write('El segundo menor numero ingresado fue:', smenor);
         document.write('La posicion del segundo menor numero ingresado fue: ',possm);
-    </script>
-</body>
-</html>
+</script>

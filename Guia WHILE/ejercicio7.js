@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 7 - Guia WHILE</title>
-</head>
-<body>
-    <script>
+<script>
         let num;
         let pos = 0;
         var max;
@@ -32,6 +23,4 @@
         document.write('El maximo valor es: ',max);
         document.write("<br />");
         document.write ('La posicion de ingreso del valor maximo fue: ',posMaximo);
-    </script>
-</body>
-</html>
+</script>

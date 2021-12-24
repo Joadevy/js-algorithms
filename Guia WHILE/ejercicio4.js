@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 4 - Guia WHILE</title>
-</head>
-<body>
-    <script>
+<script>
             var n1 = parseInt(prompt('Ingrese el primer numero',''));
             var n2 = parseInt(prompt('Ingrese el segundo numero',''));
             var mayor=0;
@@ -28,6 +19,4 @@
                 document.write(menor);
                 document.write("<br />");
             }
-    </script>
-</body>
-</html>
+</script>
