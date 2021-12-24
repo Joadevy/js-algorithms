@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9 - Guia WHILE</title>
+</head>
+<body>
+    <script>
+        var Menor;
+        var smenor;
+        var posm=0;
+        var possm=0;
+        let pos = 0;
+        let num;
+
+        while(num !=0){
+            num = parseInt(prompt('Ingrese un numero: ',''));
+            pos++;
+
+            if (pos==1){
+                menor=num;
+                smenor=num;
+                posm=pos;
+            }
+
+            else {
+                if (num < menor) {
+                    smenor = menor;
+                    possm = posm;
+                    menor = num;
+                    posm = pos;
+                }
+            }
+        }
+
+        document.write('El menor numero ingresado fue: ', menor);
+        document.write ('La posicion del menor ingresado fue: ', posm);
+        document.write("<br />");
+        document.write('El segundo menor numero ingresado fue:', smenor);
+        document.write('La posicion del segundo menor numero ingresado fue: ',possm);
+    </script>
+</body>
+</html>
