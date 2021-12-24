@@ -1,4 +1,3 @@
-<script>
         var bp = false;
         var bn = false;
         var num;
@@ -36,4 +35,3 @@
         document.write('El mayor de los negativos ingresados fue: ', maxn);
         document.write("<br />");
         document.write('El menor de los positivos ingresados fue: ', minp);
-</script>

@@ -1,4 +1,3 @@
-<script>
             var cant_cam = 0;
             var max_encom = 0;
             var max_cam=0;
@@ -48,4 +47,3 @@
         document.write('La cantidad de camiones que transportan peso son: ',cant_cam);
         document.write("<br />");
         document.write('El camion que transporta mas encomiendas es: ',max_cam,' con un total de: ',max_encom,' encomiendas');
-</script>

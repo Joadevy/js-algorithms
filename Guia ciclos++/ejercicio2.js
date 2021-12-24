@@ -1,4 +1,4 @@
-<script>
+
         var zona = parseInt(prompt('Ingrese la zona de consumo: ',''));     
         let NC = parseInt(prompt('Ingrese el numero de cliente:',''));
         var KC = parseInt(prompt('Ingrese kilovatios consumidos: ',''));
@@ -36,4 +36,3 @@
             document.write('Total facturado en la zona: ',TFZ);
             document.write("<br />");
         }
-</script>

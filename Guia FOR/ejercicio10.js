@@ -1,4 +1,3 @@
-<script>
         var maxprimo = 0;
         var contPrimo = 0;
         var control = false;
@@ -18,12 +17,12 @@
 
                 if (control==false) {
                     control = true;
-                    MaxPrimo = num;
+                    maxprimo = num;
                 }
 
                 else {
                     if (num > MaxPrimo) {
-                        MaxPrimo = num;
+                        maxprimo = num;
                     }
                 }
             }
@@ -34,6 +33,5 @@
         }   
 
         else {
-            document.write('El mayor de los primos ingresados es:',MaxPrimo);
+            document.write('El mayor de los primos ingresados es:',maxprimo);
         }
-</script>

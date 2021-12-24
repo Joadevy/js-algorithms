@@ -1,4 +1,3 @@
-<script>
         var cp = 0;
         var cn = 0;
         var cpares = 0;
@@ -39,5 +38,4 @@
         document.write("<br />");
         document.write ('La cantidad de numeros pares ingresados fue: ',cpares);
         document.write("<br />");
-        document.write('La cantidad de numeros primos ingresados fue: ',cprimos);
-</script>    
+        document.write('La cantidad de numeros primos ingresados fue: ',cprimos);  

@@ -1,4 +1,3 @@
-<script>
         let num;
         let pos = 0;
         var max;
@@ -23,4 +22,3 @@
         document.write('El maximo valor es: ',max);
         document.write("<br />");
         document.write ('La posicion de ingreso del valor maximo fue: ',posMaximo);
-</script>

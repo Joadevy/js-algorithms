@@ -1,4 +1,3 @@
-<script>
         var Menor;
         var smenor;
         var posm=0;
@@ -31,4 +30,3 @@
         document.write("<br />");
         document.write('El segundo menor numero ingresado fue:', smenor);
         document.write('La posicion del segundo menor numero ingresado fue: ',possm);
-</script>

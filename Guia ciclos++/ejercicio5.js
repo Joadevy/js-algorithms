@@ -1,4 +1,3 @@
-<script>
         let ba = false;
         let bp = false;
         var monto =0;
@@ -106,4 +105,3 @@
         document.write('La compra con menor monto de agosto tuvo un valor de ',menor_ag,' y correspondio al producto ',menor_ag_np);
         document.write("<br />");
         document.write('El numero de producto con mayor cantidad comprada en una sola compra fue ',np_max,' y se realizo al proveedor ',num_max);
-</script>

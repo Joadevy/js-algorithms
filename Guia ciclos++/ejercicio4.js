@@ -1,4 +1,3 @@
-<script>
         var cant_pers=0;
         var tot_rec=0;
         var menor_h = 0;
@@ -72,4 +71,3 @@
         document.write('El paquete con menos horas adquiridas fue ',menos_paq,' y se corresponde con la actividad ',menos_t,' registrando la cantidad de horas de ',menos_h);
         document.write("<br />");
         document.write('La cantidad de personas que compraron nuestros paquetes fueron ',cant_pers);
-</script>

@@ -1,4 +1,3 @@
-<script>
         var acum;
         var cant;
         cant = 0;
@@ -16,4 +15,3 @@
 
         promedio = (acum / cant);
         document.write("El promedio de edades es:",promedio);
-</script>

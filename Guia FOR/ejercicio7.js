@@ -1,4 +1,3 @@
-<script type="text/javascript">
         var mayor;
         var pos_mayor;
         for (i = 0; i < 5; i++) {
@@ -19,4 +18,3 @@
         document.write("el mayor es:",mayor);
         document.write("<br />");
         document.write("la posicion es:",pos_mayor);
-    </script>

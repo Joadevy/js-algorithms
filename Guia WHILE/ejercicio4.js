@@ -1,4 +1,3 @@
-<script>
             var n1 = parseInt(prompt('Ingrese el primer numero',''));
             var n2 = parseInt(prompt('Ingrese el segundo numero',''));
             var mayor=0;
@@ -19,4 +18,3 @@
                 document.write(menor);
                 document.write("<br />");
             }
-</script>
