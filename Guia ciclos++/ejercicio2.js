@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 2 / Guia condicional++</title>
-</head>
-<body>
-    <script>
+<script>
         var zona = parseInt(prompt('Ingrese la zona de consumo: ',''));     
         let NC = parseInt(prompt('Ingrese el numero de cliente:',''));
         var KC = parseInt(prompt('Ingrese kilovatios consumidos: ',''));
@@ -45,6 +36,4 @@
             document.write('Total facturado en la zona: ',TFZ);
             document.write("<br />");
         }
-    </script>
-</body>
-</html>
+</script>

@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 3 - Guia ciclos++</title>
-</head>
-<body>
-    <script>
+<script>
             var cant_cam = 0;
             var max_encom = 0;
             var max_cam=0;
@@ -57,6 +48,4 @@
         document.write('La cantidad de camiones que transportan peso son: ',cant_cam);
         document.write("<br />");
         document.write('El camion que transporta mas encomiendas es: ',max_cam,' con un total de: ',max_encom,' encomiendas');
-    </script>
-</body>
-</html>
+</script>
