@@ -1,13 +1,4 @@
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Ex 7 / Guide</title>
-  </head>
-  <body>
-      <script>
+// Script for tracking the amount of sales using article number (only 1-15 article numbers)
           var ventas = [];
           var max = 0;
           var max_art = 0;
@@ -54,6 +45,3 @@
 
             document.write("<br />");
             document.write('The max registered sales of an article is for article ',max_art,' with the amount of ',max);
-      </script>
-  </body>
-  </html>
