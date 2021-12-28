@@ -1,4 +1,7 @@
-// Script for tracking the amount of sales using article numbers (only 1-15). Then the script have options to show the articles with no sales, the best selling item and an option to show any sell-amount by entering an article number.
+/* Script for tracking the amount of sales using article numbers (only 1-15). 
+Then the script have options to show the articles with no sales, the best selling item 
+and an option to show any sell-amount by entering an article number. */
+
           var ventas = [];
           var max = 0;
           var max_art = 0;
