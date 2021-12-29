@@ -1,3 +1,7 @@
+/* Script that creates a function 'par' which receives an int number and returns 0/1 depending
+if its an odd or even number. Then in the main function 'par' will invoked and used for comparing
+5 numbers and it'll show the amount of even numbers entered.*/
+
 function par(n1) {
     if (n1 % 2 == 0) {
         r = 1;
