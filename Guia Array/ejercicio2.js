@@ -1,4 +1,6 @@
-
+/* Script that use an array of int values and find the maximum of this and the position
+ that it was entered. */
+        
         function pushing(leng) {  // Push an array with the length entered by the parameter 'leng'
             for (i=0;i<leng;i++) {
                     let number = parseInt(prompt('Enter a number: ',''));
