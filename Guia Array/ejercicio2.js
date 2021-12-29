@@ -1,5 +1,5 @@
-/* Script that use an array of int values and find the maximum of this and the position
- that it was entered. */
+/* Script that use an array of int values and find its maximum of this and the position
+ at which it was entered*/
         
         function pushing(leng) {  // Push an array with the length entered by the parameter 'leng'
             for (i=0;i<leng;i++) {
