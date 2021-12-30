@@ -1,4 +1,7 @@
-        var Menor;
+        /* The script consists of requesting a list of numbers and showing the smallest and the second-smallest 
+        with their own positions that have been entered */
+        
+        var menor;
         var smenor;
         var posm=0;
         var possm=0;
@@ -25,8 +28,8 @@
             }
         }
 
-        document.write('El menor numero ingresado fue: ', menor);
-        document.write ('La posicion del menor ingresado fue: ', posm);
+        document.write('The smallest number entered was: ', menor);
+        document.write ('The smallests position was: ', posm);
         document.write("<br />");
-        document.write('El segundo menor numero ingresado fue:', smenor);
-        document.write('La posicion del segundo menor numero ingresado fue: ',possm);
+        document.write('The second-smallest number entered was: ', smenor);
+        document.write('The second-smallests position was: ',possm);
