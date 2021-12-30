@@ -9,7 +9,7 @@
         let num;
 
         while(num !=0){
-            num = parseInt(prompt('Ingrese un numero: ',''));
+            num = parseInt(prompt('Enter a number: ',''));
             pos++;
 
             if (pos==1){
