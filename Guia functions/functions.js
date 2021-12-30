@@ -1,3 +1,4 @@
+/* That file contains some functions will be used in ejercicio7 */
 function par(n1) {
     if (n1 % 2 == 0) {
         r = 1;

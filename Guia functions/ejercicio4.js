@@ -1,4 +1,6 @@
-        /* */
+        /* That script consist in a function that receives a number and returns 1 if the number entered
+        was prime or 0 if it wasn't. Then the function main requests a list of numbers and returns the average only
+        for the prime numbers entered.*/
         
         const primo = (n1) => {
             let cant = 0;
