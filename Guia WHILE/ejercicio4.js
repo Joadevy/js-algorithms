@@ -1,5 +1,7 @@
-            var n1 = parseInt(prompt('Ingrese el primer numero',''));
-            var n2 = parseInt(prompt('Ingrese el segundo numero',''));
+/* The script prompts two numbers and then shows the numbers between those two.*/
+
+            var n1 = parseInt(prompt('Enter the first number',''));
+            var n2 = parseInt(prompt('Enter the second number',''));
             var mayor=0;
             var menor=0;
 
