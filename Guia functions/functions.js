@@ -1,4 +1,4 @@
-/* That file contains some functions will be used in ejercicio7 */
+/* That file contains some functions will be used in ejercicio8.html */
 function par(n1) {
     if (n1 % 2 == 0) {
         r = 1;
