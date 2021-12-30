@@ -1,3 +1,6 @@
+/* The script requires a list of numbers and calculates for displaying the amount of prime numbers, even numbers, 
+and positive and negative numbers entered.*/
+        
         var cp = 0;
         var cn = 0;
         var cpares = 0;
@@ -5,7 +8,7 @@
         let num;
 
         while (num!=0){
-            num = parseInt(prompt('Ingrese un numero: ',''));
+            num = parseInt(prompt('Enter a number: ',''));
             let cant = 0;
 
             if (num>0) {
@@ -32,10 +35,10 @@
             }
         }
 
-        document.write('La cantidad de numeros positivos ingresados fue: ', cp);
+        document.write('The amount of positive numbers entered is: ', cp);
         document.write("<br />");
-        document.write('La cantidad de numeros negativos ingresados fue: ',cn);
+        document.write('The amount of negative numbers entered is: ',cn);
         document.write("<br />");
-        document.write ('La cantidad de numeros pares ingresados fue: ',cpares);
+        document.write ('The amount of even numbers entered is: ',cpares);
         document.write("<br />");
-        document.write('La cantidad de numeros primos ingresados fue: ',cprimos);  
+        document.write('The amount of prime numbers entered is: ',cprimos);  
