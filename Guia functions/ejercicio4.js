@@ -1,3 +1,5 @@
+        /* */
+        
         const primo = (n1) => {
             let cant = 0;
             let r=0;
