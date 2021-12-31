@@ -1,3 +1,5 @@
+/* The scrip requests 20 ages and then calculates and displays the average of ages>18. */
+        
         var acum;
         var cant;
         cant = 0;
@@ -5,7 +7,7 @@
         var promedio;
 
         for (i=0; i<20; i++) {
-            let edad = parseInt(prompt('Ingrese la edad',''));
+            let edad = parseInt(prompt('Enter the age',''));
 
             if (edad > 18) {
                 cant++;
@@ -14,4 +16,4 @@
         }
 
         promedio = (acum / cant);
-        document.write("El promedio de edades es:",promedio);
+        document.write("The average of ages is: ",promedio);
