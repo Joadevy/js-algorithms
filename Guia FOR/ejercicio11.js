@@ -1,9 +1,12 @@
+/* The script requests 10 numbers and calculates prime numbers. If there are none it shows an alert, otherwise it displays
+the maximum prime found.*/
+        
         var maxprimo = 0;
         var contPrimo = 0;
         var control = false;
 
         for (i=0; i<10;i++) {
-            let num = parseInt(prompt('Ingrese un numero:',''));
+            let num = parseInt(prompt('Enter a number: ',''));
             let cant = 0; 
 
             for (x=1; x<=num;x++) {
@@ -21,7 +24,7 @@
                 }
 
                 else {
-                    if (num > MaxPrimo) {
+                    if (num > maxprimo) {
                         maxprimo = num;
                     }
                 }
@@ -29,9 +32,9 @@
         }
 
         if (contPrimo==0) {
-                document.write('Ningun numero primo fue ingresado');
+                document.write('There is none prime numbers in the list entered');
         }   
 
         else {
-            document.write('El mayor de los primos ingresados es:',maxprimo);
+            document.write('The maximum prime number found is: ',maxprimo);
         }
