@@ -1,3 +1,11 @@
+/* The objective of this script is the managment of the list of the packages sold in the last vacation season. It has a register for each sale with data of
+(package number, amount of people included, price per person, total hours in activities, adventure type) and needs to display:
+1- Amount of packages sold for each adventure type.
+2- Total amount of users in the season.
+3- Total collected for sale.
+4- Sale with increased collection.
+5- The package number and adventure type with less hours registered. */
+        
         var cant_pers=0;
         var tot_rec=0;
         var menor_h = 0;
@@ -5,11 +13,11 @@
         var menor_t = 0;
         let bg = false;
 
-        let np = parseInt(prompt('Ingrese el numero de paquete: ',''));
-        let p = parseInt(prompt('Ingrese cantidad de personas: ',''));
-        let pp = parseInt(prompt('Ingrese el precio por persona: ',''));
-        let ht = parseInt(prompt('Ingrese horas totales de actividades: ',''));
-        let t = parseInt(prompt('Ingrese el tipo de actividad: ',''));
+        let np = parseInt(prompt('Enter the package number: ',''));
+        let p = parseInt(prompt('Enter the amount of people: ',''));
+        let pp = parseInt(prompt('Enter price per person: ',''));
+        let ht = parseInt(prompt('Enter total activity hours: ',''));
+        let t = parseInt(prompt('Enter activity type: ',''));
         
         while (np>0) {
             let tipo_actual=t;
@@ -29,15 +37,15 @@
                 }
 
                 if (bg == false) {
-                    menos_h=ht;
-                    menos_t=t;
-                    menos_paq=np;
+                    menor_h=ht;
+                    menor_t=t;
+                    menor_paq=np;
                     bg = true;
                 } else {
-                    if (menos_h > ht) {
-                        menos_h=ht;
-                        menos_t=t;
-                        menos_paq=np;
+                    if (menor_h > ht) {
+                        menor_h=ht;
+                        menor_t=t;
+                        menor_paq=np;
                     }
                 }
 
@@ -49,25 +57,25 @@
                 }
 
                 document.write("<br />");
-                document.write('El total recaudado del paquete ',np,' es: ', tot_rec,'. Pertenece a la actividad: ',tipo_actual);
+                document.write('Total collected for the package ',np,' is: ', tot_rec,'. It belongs to: ',tipo_actual);
                 document.write("<br />");
 
-                np = parseInt(prompt('Ingrese el numero de paquete: ',''));
-                p = parseInt(prompt('Ingrese cantidad de personas: ',''));
-                pp = parseInt(prompt('Ingrese el precio por persona: ',''));
-                ht = parseInt(prompt('Ingrese horas totales de actividades: ',''));
-                t = parseInt(prompt('Ingrese el tipo de actividad: ',''));
+                np = parseInt(prompt('Enter the package number: ',''));
+                p = parseInt(prompt('Enter the amount of people: ',''));
+                pp = parseInt(prompt('Enter price per person: ',''));
+                ht = parseInt(prompt('Enter total activity hours: ',''));
+                t = parseInt(prompt('Enter activity type: ',''));
             }
 
-            document.write('Datos de la actividad: ',tipo_actual);
+            document.write('Data for the activity ',tipo_actual);
             document.write("<br />");
-            document.write('La cantidad de paquetes vendidos de la actividad ',tipo_actual,' fue ',cant_paq);
+            document.write('The amount of packages sold in the activity ',tipo_actual,' was ',cant_paq);
             document.write("<br />");
-            document.write('El mayor importe de la actividad ',tipo_actual,' fue ',mayor_imp,' y corresponde al paquete ',mayor_paq);
+            document.write('The increased collection of activity ',tipo_actual,' was ',mayor_imp,' and belongs to ',mayor_paq);
             document.write("<br />");
         }
 
         document.write("<br />");
-        document.write('El paquete con menos horas adquiridas fue ',menos_paq,' y se corresponde con la actividad ',menos_t,' registrando la cantidad de horas de ',menos_h);
+        document.write('The package with less hours was ',menor_paq,' and belongs to the activity ',menor_t,' registering the amount of hours of ',menor_h);
         document.write("<br />");
-        document.write('La cantidad de personas que compraron nuestros paquetes fueron ',cant_pers);
+        document.write('The amount of people that have purchased our packages were ',cant_pers);
