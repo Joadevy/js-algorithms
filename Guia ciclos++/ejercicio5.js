@@ -1,3 +1,12 @@
+/* This is a script for manage the purchases made in different suppliers in the last year. For each buy they register the data 
+of (supplier number, day, month, commercial invoice type 'A,B or C', product number, amount purchased, price per unit.
+Then they require:
+1- Max-amount registered in one purchase per supplier and supplier-number.
+2- Total invested in a year for each invoice type.
+3- Purchase with min-amount registered in August with their number product.
+4- Amount of purchases for each supplier.
+5- Product number with max-amount in a purchase and the supplier from that it was purchased.*/
+        
         let ba = false;
         let bp = false;
         var monto =0;
@@ -11,13 +20,13 @@
         var cantB = 0;
         var cantC = 0;
 
-        var num = parseInt(prompt('Ingrese numero de proveedor: ',''));
-        let dia = parseInt(prompt('Ingrese dia de compra: ',''));
-        let mes =  parseInt(prompt('Ingrese mes de compra: ',''));
-        let tf = (prompt('Ingrese tipo de factura: ',''));
-        let nprod = parseInt(prompt('Ingrese numero de producto: ',''));
-        let cant  = parseInt(prompt('Ingrese cantidad adquirida: ',''));
-        let pu= parseInt(prompt('Ingrese precio por unidad: ',''));
+        var num = parseInt(prompt('Enter the supplier number: ',''));
+        let dia = parseInt(prompt('Enter the day of purchase: ',''));
+        let mes =  parseInt(prompt('Enter the month of purchase: ',''));
+        let tf = (prompt('Enter the invoice type: ',''));
+        let nprod = parseInt(prompt('Enter product number: ',''));
+        let cant  = parseInt(prompt('Enter amount adquired: ',''));
+        let pu= parseInt(prompt('Enter unit price: ',''));
 
         while (num!=0) {
             let n_actual=num;
@@ -79,29 +88,29 @@
                     }
                 }
 
-                num = parseInt(prompt('Ingrese numero de proveedor: ',''));
-                dia = parseInt(prompt('Ingrese dia de compra: ',''));
-                mes = parseInt(prompt('Ingrese mes de compra: ',''));
-                tf = (prompt('Ingrese tipo de factura: ',''));
-                nprod = parseInt(prompt('Ingrese numero de producto: ',''));
-                cant  = parseInt(prompt('Ingrese cantidad adquirida: ',''));
-                pu= parseInt(prompt('Ingrese precio por unidad: ',''));
+                num = parseInt(prompt('Enter the supplier number: ',''));
+                dia = parseInt(prompt('Enter the day of purchase: ',''));
+                mes =  parseInt(prompt('Enter the month of purchase: ',''));
+                tf = (prompt('Enter the invoice type: ',''));
+                nprod = parseInt(prompt('Enter product number: ',''));
+                cant  = parseInt(prompt('Enter amount adquired: ',''));
+                pu= parseInt(prompt('Enter unit price: ',''));
             }
 
             document.write("<br />");
-            document.write('La cantidad de compras realizadas al proovedor ',n_actual,' fueron ', compra);
+            document.write('The amount of purchases made in the supplier ',n_actual,' were ', compra);
             document.write("<br />");
-            document.write('El monto maximo en una sola compra al  proveedor ',n_actual,' ha sido de ',monto_max);
+            document.write('The max-amount in a purchase from the supplier ',n_actual,' has been of ',monto_max);
             document.write("<br />"); 
         }
 
         document.write("<br />"); 
-        document.write('Inversion anual en facturas de tipo A fue de ', cantA);
+        document.write('Annual investment in invoice type A was of ', cantA);
         document.write("<br />");
-        document.write('Inversion anual en facturas de tipo B fue de ', cantB);
+        document.write('Annual investment in invoice type B was of ', cantB);
         document.write("<br />");
-        document.write('Inversion anual en facturas de tipo C fue de ', cantC);
+        document.write('Annual investment in invoice type C was of ', cantC);
         document.write("<br />");
-        document.write('La compra con menor monto de agosto tuvo un valor de ',menor_ag,' y correspondio al producto ',menor_ag_np);
+        document.write('The min-amount purchase in August was a value of ',menor_ag,' and corresponded to ',menor_ag_np);
         document.write("<br />");
-        document.write('El numero de producto con mayor cantidad comprada en una sola compra fue ',np_max,' y se realizo al proveedor ',num_max);
+        document.write('The product number with max-amount in a purchase was ',np_max,' and it has been made in the supplier ',num_max);
