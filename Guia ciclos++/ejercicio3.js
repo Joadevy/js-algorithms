@@ -1,11 +1,18 @@
+/* This is a program for the managment of a 'shipping company' that uses trucks for shipments. It uses data of truck-number and weigth of the package loaded. 
+They need to group trucks with a max weight of 200kg. 
+The goal of this is to determinate: 
+1- List with truck-number and total weight (after being loaded), 
+2- The truck-number with max amount of packages loaded, 
+3- The amount of loaded trucks. */
+            
             var cant_cam = 0;
             var max_encom = 0;
             var max_cam=0;
             let camion_actual=0;
             var peso_tot = 0;
 
-            let camion = parseInt(prompt('Introduzca numero de camion: ',''));
-            let peso = parseInt(prompt('Introduzca peso: ',''));
+            let camion = parseInt(prompt('Enter the truck number: ',''));
+            let peso = parseInt(prompt('Enter the package weight: ',''));
             peso_tot = peso;
 
             while ((peso>0) && (peso_tot <= 200)) {
@@ -18,8 +25,8 @@
                     peso_tot+=peso;
                     encom++;
 
-                    camion = parseInt(prompt('Introduzca numero de camion: ',''));
-                    peso = parseInt(prompt('Introduzca peso: ',''));
+                    camion = parseInt(prompt('Enter the truck number: ',''));
+                    peso = parseInt(prompt('Enter the package weight: ',''));
                 }
 
 
@@ -34,16 +41,16 @@
                 }
 
                 document.write("<br />");
-                document.write('El camion ',cant_cam,' transporta ', peso_tot,' kilogramos');
+                document.write('The truck ',cant_cam,' transports ', peso_tot,' kilograms');
                 document.write("<br />");
             }
 
         if (peso_tot>200) {
-            document.write('El camion excedio el peso');
+            document.write('The truck exceeds the max-weight');
             document.write("<br />");
         }
 
         document.write("<br />");
-        document.write('La cantidad de camiones que transportan peso son: ',cant_cam);
+        document.write('The amount of transporting-trucks are: ',cant_cam);
         document.write("<br />");
-        document.write('El camion que transporta mas encomiendas es: ',max_cam,' con un total de: ',max_encom,' encomiendas');
+        document.write('The truck with more packages loaded is: ',max_cam,' with a total of: ',max_encom,' packages');
