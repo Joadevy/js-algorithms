@@ -1,7 +1,6 @@
 /* This is a test-script only, I used the 'includes' and 'forEach' functions for first time. The script basically
 prompts for a car-code and looks for it in the array 'codigoAutos', then asks if the user needs to add another element and then if the answer is 
-'yes' pushes it.
-*/
+'yes' pushes it.*/
         var codigoAutos = [1234,2235,7521,8592,7653,9090,1534,2175];
         var cod = parseInt(prompt('Enter the car-code: ',''));
         
