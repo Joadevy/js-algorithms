@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testing</title>
-</head>
-<body>
-    <script>
+/* This is a test-script only, I used the 'includes' and 'forEach' functions for first time. The script basically
+prompts for a car-code and looks for it in the array 'codigoAutos', then asks if the user needs to add another element and then if the answer is 
+'yes' pushes it.
+*/
         var codigoAutos = [1234,2235,7521,8592,7653,9090,1534,2175];
         var cod = parseInt(prompt('Enter the car-code: ',''));
         
@@ -34,6 +28,3 @@
                 codigoAutos.forEach(item => {document.write(item); document.write("<br />");} );
             }
         }
-    </script>
-</body>
-</html>
