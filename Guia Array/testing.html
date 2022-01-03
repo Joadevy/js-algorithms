@@ -4,9 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Testing</title>
 </head>
 <body>
-    
+    <script>
+        var codigoAutos = [1234,2235,7521,8592,7653,9090,1534,2175];
+
+        var cod = parseInt(prompt('Enter the car-code: ',''));
+        
+        function buscarCodigo(cod) {
+            if (codigoAutos.includes(cod) == true) {
+                var p = 'yes';
+            }
+            return p;
+        }
+
+        let I = buscarCodigo(cod);
+        If (I =='yes'){
+            document.write('Efectively the element ',cod,' is on the array!');
+        }
+
+    </script>
 </body>
 </html>
