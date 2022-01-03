@@ -8,11 +8,68 @@
 </head>
 <body>
     <script>
-        var codigoAutos = [1234,2235,7521,8592,7653,9090,1534,2175];
+        // Block with cars information: this represent a register of related information linked by the car number that is on the array'codigos'.
+        var codigos = [1234,2235,7521,8592,7653,9090,1534,2175,1025,1875,8575,4321,5789,3456,8765,5555,8888,6544,5554,9899]; // Array with car codes, each code is for one different car.
+        var categorias = [2,5,1,3,4,5,10,8,1,2,3,4,5,10,7,6,1,4,7,8]; // Categories of each car of 'codigos' (1-10)
+        var ppkm = [1.5,4,1,2.2,3.5,4,5,4.25,1,1.5,2.2,3.5,4,5,4.15,4.05,1,3.5,4.15,4.25]; // Price per kilometer depending on the category of the car.
+        var agencia = [1,5,4,3,2,3,5,1,5,4,2,1,3,2,2,3,5,2,1,4]; // Number of each agency (1-5)
+        var ubicacion = [1,2,1,2,3,1,2,3,3,1,2,2,3,1,2,3,1,3,2,1]; // Location of the agencies are in only 3 distrites (1-3)
+
+        // Block with arrays of processing. They are all initialized in 0 and ready for acumullate info to be provided by the user.
+        var recaud = [0,0,0]; // Array for acumulate the total collected in the 3 locations of the different rental agencies.
+        var cantAlquileres = [0,0,0,0,0,0,0,0,0,0]; // Array to count total rentals.
+        var autosPA = [0,0,0,0,0]; // Array for controlling the cars per rental agency.
+        var catMA = [0,0,0,0,0,0,0,0,0,0]; // Array for acumulate the amount of categories per rented car.
+        var clientes = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]; // Array for acumulate the traveled KM of 20 clients.
+
+        main();
+
+        function main() {
+            carga();
+            /* function proceso();
+            function listado_clientes();
+            function rec_per_ubic();
+            function muestra_autosPA();
+            function muestra_catMA();
+            function muestra_agMA(); */
+        }
+
+        function autos_PA(num) {
+                switch(num) {
+                    case 1:
+                        autosPA[0]++;
+                    break;
+
+                    case 2: 
+                        autosPA[1]++;
+                    break;
+
+                    case 3:
+                        autosPA[2]++;
+                    break;
+
+                    case 4:
+                        autosPA[3]++;
+                    break;
+                    
+                    case 5:
+                        autosPA[4]++;
+                    break;
+                    
+                    default:
+                    break;
+                }
+        }
+
+        function carga() {
+            agencia.forEach(item => {var num = item; autos_PA(num);});
+        }    
+
+        /*
         var cod = parseInt(prompt('Enter the car-code: ',''));
         
         function buscarCodigo(cod) {
-            return codigoAutos.includes(cod);
+            return codigos.includes(cod);
         }
 
         let I = buscarCodigo(cod);
@@ -27,10 +84,11 @@
             var q = prompt('Do you want to add a new car code? (y/n)','');
             if ( (q=='y') ||(q== 'yes') ){
                 var newElement = parseInt(prompt('Enter the car code',''));
-                codigoAutos.push(newElement);
-                codigoAutos.forEach(item => {document.write(item); document.write("<br />");} );
+                codigos.push(newElement);
+                codigos.forEach(item => {document.write(item); document.write("<br />");} );
             }
         }
+        */
     </script>
 </body>
 </html>
