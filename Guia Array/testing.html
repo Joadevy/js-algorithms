@@ -20,9 +20,18 @@
         }
 
         let I = buscarCodigo(cod);
-        If (I =='yes'){
-            document.write('Efectively the element ',cod,' is on the array!');
+        if (I =='yes'){
+            document.write('Indeed the element: ',cod,' is in the array!');
+            document.write("<br />");
         }
+
+        var q = prompt('Do you want to add a new car code? (y/n)','');
+        if ( (q=='y') ||(q== 'yes') ){
+            var newElement = parseInt(prompt('Enter the car code',''));
+            codigoAutos.push(newElement);
+        }
+
+        codigoAutos.forEach(item => {document.write(item); document.write("<br />");} );
 
     </script>
 </body>
