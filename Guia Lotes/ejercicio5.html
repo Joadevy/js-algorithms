@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5</title>
+</head>
+<body>
+    <script>
+        var codigoAutos = [1234,2235,7521,8592,7653,9090,1534,2175];
+        var cod = parseInt(prompt('Enter the car-code: ',''));
+        
+        function buscarCodigo(cod) {
+            return codigoAutos.includes(cod);
+        }
+
+        let I = buscarCodigo(cod);
+        if (I == true){
+            document.write('Indeed the element: ',cod,' is in the array!');
+            document.write("<br />");
+        }
+
+        request();
+
+        function request(){
+            var q = prompt('Do you want to add a new car code? (y/n)','');
+            if ( (q=='y') ||(q== 'yes') ){
+                var newElement = parseInt(prompt('Enter the car code',''));
+                codigoAutos.push(newElement);
+                codigoAutos.forEach(item => {document.write(item); document.write("<br />");} );
+            }
+        }
+    </script>
+</body>
+</html>
