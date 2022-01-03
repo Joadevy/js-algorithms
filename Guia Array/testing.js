@@ -5,14 +5,11 @@ prompts for a car-code and looks for it in the array 'codigoAutos', then asks if
         var cod = parseInt(prompt('Enter the car-code: ',''));
         
         function buscarCodigo(cod) {
-            if (codigoAutos.includes(cod) == true) {
-                var p = 'yes';
-            }
-            return p;
+            return codigoAutos.includes(cod);
         }
 
         let I = buscarCodigo(cod);
-        if (I =='yes'){
+        if (I == true){
             document.write('Indeed the element: ',cod,' is in the array!');
             document.write("<br />");
         }
