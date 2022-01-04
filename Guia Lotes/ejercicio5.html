@@ -27,9 +27,9 @@
         function main() {
             carga(); // Classifies and loads the 'autosPA' array.
             proceso();
-            /* 
             listado_clientes();
             rec_per_ubic();
+            /*
             muestra_autosPA();
             muestra_catMA();
             muestra_agMA(); */
@@ -72,6 +72,7 @@
             let day = parseInt(prompt('Enter the rental-start date ',''));
             var kmr = parseInt(prompt('Enter the kilometers traleved: ',''));
 
+            while (nc != 0) {
                 var index = buscar(cod);
                 var costo = calculocosto(kmr,index);
                 document.write('El costo fue: ',costo);
@@ -80,10 +81,12 @@
                 acum_categorias(index);
                 acum_clientes(costo,nc);
                 acum_agencias(index);
+                    cod = parseInt(prompt('Enter the car code: ',''));
+                    nc = parseInt(prompt('Enter the number client: ',''));
+                    day = parseInt(prompt('Enter the rental-start date ',''));
+                    kmr = parseInt(prompt('Enter the kilometers traleved: ',''));
+            }
 
-                document.write("<br />");
-                document.write('la agencia era: ',agencia[index]);
-                document.write("<br />");
                 for (i=0;i<5;i++) {
                     document.write('la cantidad acumulada en agencia ',i+1,' es: ',cantAlquileres[i]);
                     document.write("<br />");
@@ -202,6 +205,21 @@
             }
         }
 
+        function listado_clientes(){
+            for (i=0;i<clientes.length;i++){
+                document.write('El cliente ',i+1,' realizo pagos por un monto de ',clientes[i]);
+                document.write("<br />");
+            }
+            document.write("<br />");
+        }
+
+        function rec_per_ubic(){
+            for (i=0;i<recaud.length;i++){
+                document.write('La agencia',i+1,' acumulo pagos por valor de ',recaud[i]);
+                document.write("<br />");
+            }
+            document.write("<br />");
+        }
         /*
         var cod = parseInt(prompt('Enter the car-code: ',''));
         
