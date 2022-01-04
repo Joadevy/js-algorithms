@@ -78,6 +78,9 @@
                 document.write("<br />");
                 acum_ubicaciones(costo,index);
                 acum_categorias(index);
+                acum_clientes(costo,nc);
+                
+                /*
                 document.write("<br />");
                 document.write('la categoria era: ',categorias[index]);
                 document.write("<br />");
@@ -85,8 +88,7 @@
                     document.write('la cantidad acumulada en ',i+1,' es: ',catMA[i]);
                     document.write("<br />");
                 }
-                
-        
+                */
         }
 
         function buscar(c){
@@ -163,6 +165,9 @@
             }
         }
 
+        function acum_clientes(c,nc){
+            clientes[nc-1]+=c;
+        }
 
         /*
         var cod = parseInt(prompt('Enter the car-code: ',''));
