@@ -77,11 +77,15 @@
                 document.write('El costo fue: ',costo);
                 document.write("<br />");
                 acum_ubicaciones(costo,index);
-                
-                for (i=0;i<3;i++){
-                    document.write(recaud[i]);
+                acum_categorias(index);
+                document.write("<br />");
+                document.write('la categoria era: ',categorias[index]);
+                document.write("<br />");
+                for (i=0;i<10;i++) {
+                    document.write('la cantidad acumulada en ',i+1,' es: ',catMA[i]);
                     document.write("<br />");
                 }
+                
         
         }
 
@@ -114,6 +118,51 @@
         function buscar_ub(i) {
                 return ubicacion[agencia[i]-1];
         }
+
+        function acum_categorias(i){
+            switch (categorias[i]) {
+                case 1:
+                    catMA[0]++;
+                break;
+
+                case 2:
+                    catMA[1]++;
+                break;
+
+                case 3:
+                    catMA[2]++;
+                break;
+
+                case 4:
+                    catMA[3]++;
+                break;
+
+                case 5:
+                    catMA[4]++;
+                break;
+
+                case 6:
+                    catMA[5]++;
+                break;
+
+                case 7:
+                    catMA[6]++;
+                break;
+
+                case 8:
+                    catMA[7]++;
+                break;
+
+                case 9:
+                    catMA[8]++;
+                break;
+
+                case 10:
+                    catMA[9]++;
+                break;
+            }
+        }
+
 
         /*
         var cod = parseInt(prompt('Enter the car-code: ',''));
