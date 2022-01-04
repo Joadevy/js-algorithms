@@ -29,8 +29,8 @@
             proceso();
             listado_clientes();
             rec_per_ubic();
-            /*
             muestra_autosPA();
+            /*
             muestra_catMA();
             muestra_agMA(); */
         }
@@ -215,7 +215,15 @@
 
         function rec_per_ubic(){
             for (i=0;i<recaud.length;i++){
-                document.write('La agencia',i+1,' acumulo pagos por valor de ',recaud[i]);
+                document.write('La agencia ',i+1,' acumulo pagos por valor de ',recaud[i]);
+                document.write("<br />");
+            }
+            document.write("<br />");
+        }
+        
+        function muestra_autosPA() {
+            for (i=0;i<autosPA.length;i++){
+                document.write('La cantidad de autos en la agencia ',i+1,' es de ',autosPA[i]);
                 document.write("<br />");
             }
             document.write("<br />");
