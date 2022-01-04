@@ -17,10 +17,10 @@
 
         // Block with arrays of processing. They are all initialized in 0 and ready for acumullate info to be provided by the user.
         var recaud = [0,0,0]; // Array for acumulate the total collected in the 3 locations of the different rental agencies.
-        var cantAlquileres = [0,0,0,0,0,0,0,0,0,0]; // Array to count total rentals.
+        var cantAlquileres = [0,0,0,0,0]; // Array to count total rentals.
         var autosPA = [0,0,0,0,0]; // Array for controlling the cars per rental agency.
         var catMA = [0,0,0,0,0,0,0,0,0,0]; // Array for acumulate the amount of categories per rented car.
-        var clientes = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]; // Array for acumulate the traveled KM of 20 clients.
+        var clientes = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]; // Array for acumulate payments for 20 clients.
 
         main();
 
@@ -79,7 +79,16 @@
                 acum_ubicaciones(costo,index);
                 acum_categorias(index);
                 acum_clientes(costo,nc);
-                
+                acum_agencias(index);
+
+                document.write("<br />");
+                document.write('la agencia era: ',agencia[index]);
+                document.write("<br />");
+                for (i=0;i<5;i++) {
+                    document.write('la cantidad acumulada en agencia ',i+1,' es: ',cantAlquileres[i]);
+                    document.write("<br />");
+                }
+
                 /*
                 document.write("<br />");
                 document.write('la categoria era: ',categorias[index]);
@@ -167,6 +176,30 @@
 
         function acum_clientes(c,nc){
             clientes[nc-1]+=c;
+        }
+
+        function acum_agencias(i){
+            switch (agencia[i]) {
+                case 1:
+                    cantAlquileres[0]++;
+                break;
+
+                case 2:
+                    cantAlquileres[1]++;
+                break;
+
+                case 3:
+                    cantAlquileres[2]++;
+                break;
+
+                case 4:
+                    cantAlquileres[3]++;
+                break;
+
+                case 5:
+                    cantAlquileres[4]++;
+                break;
+            }
         }
 
         /*
