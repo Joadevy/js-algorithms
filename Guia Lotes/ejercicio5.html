@@ -85,21 +85,6 @@
                     day = parseInt(prompt('Enter the rental-start date ',''));
                     kmr = parseInt(prompt('Enter the kilometers traleved: ',''));
             }
-
-                for (i=0;i<5;i++) {
-                    document.write('la cantidad acumulada en agencia ',i+1,' es: ',cantAlquileres[i]);
-                    document.write("<br />");
-                }
-
-                /*
-                document.write("<br />");
-                document.write('la categoria era: ',categorias[index]);
-                document.write("<br />");
-                for (i=0;i<10;i++) {
-                    document.write('la cantidad acumulada en ',i+1,' es: ',catMA[i]);
-                    document.write("<br />");
-                }
-                */
         }
 
         function buscar(c){
@@ -258,30 +243,6 @@
             }
             document.write("<br />");
         }
-        /*
-        var cod = parseInt(prompt('Enter the car-code: ',''));
-        
-        function buscarCodigo(cod) {
-            return codigos.includes(cod);
-        }
-
-        let I = buscarCodigo(cod);
-        if (I == true){
-            document.write('Indeed the element: ',cod,' is in the array!');
-            document.write("<br />");
-        }
-
-        request();
-
-        function request(){
-            var q = prompt('Do you want to add a new car code? (y/n)','');
-            if ( (q=='y') ||(q== 'yes') ){
-                var newElement = parseInt(prompt('Enter the car code',''));
-                codigos.push(newElement);
-                codigos.forEach(item => {document.write(item); document.write("<br />");} );
-            }
-        }
-        */
     </script>
 </body>
 </html>
