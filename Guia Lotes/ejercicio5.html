@@ -74,8 +74,6 @@
             while (nc != 0) {
                 var index = buscar(cod);
                 var costo = calculocosto(kmr,index);
-                document.write('El costo fue: ',costo);
-                document.write("<br />");
                 acum_ubicaciones(costo,index);
                 acum_categorias(index);
                 acum_clientes(costo,nc);
@@ -191,7 +189,7 @@
 
         function listado_clientes(){
             for (i=0;i<clientes.length;i++){
-                document.write('El cliente ',i+1,' realizo pagos por un monto de ',clientes[i]);
+                document.write('The client number ',i+1,' realized payments for a total value of ',clientes[i]);
                 document.write("<br />");
             }
             document.write("<br />");
@@ -199,7 +197,7 @@
 
         function rec_per_ubic(){
             for (i=0;i<recaud.length;i++){
-                document.write('La agencia ',i+1,' acumulo pagos por valor de ',recaud[i]);
+                document.write('The location of agencies: ',i+1,' acumulated payments for a value of ',recaud[i]);
                 document.write("<br />");
             }
             document.write("<br />");
@@ -207,7 +205,7 @@
         
         function muestra_autosPA() {
             for (i=0;i<autosPA.length;i++){
-                document.write('La cantidad de autos en la agencia ',i+1,' es de ',autosPA[i]);
+                document.write('The amount of cars in the agency ',i+1,' is ',autosPA[i]);
                 document.write("<br />");
             }
             document.write("<br />");
@@ -229,7 +227,7 @@
                     }
                 }
             }
-            document.write('La categoria mas alquilada fue: ',maxc,' con la cantidad de ',max);
+            document.write('The most rented category was: ',maxc,' with the amount of ',max,' rents.');
             document.write("<br />");
         }
         
@@ -237,7 +235,7 @@
             document.write("<br />");
             for (i=0;i<cantAlquileres.length;i++){
                 if (cantAlquileres[i]<2) {
-                    document.write('La agencia ',i+1,' realizo menos de 2 alquileres');
+                    document.write('The agency ',i+1,' realized less than 2 rents');
                 document.write("<br />");
                 }
             }
