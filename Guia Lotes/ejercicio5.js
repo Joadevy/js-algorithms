@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercise 5</title>
-</head>
-<body>
-    <script>
+/*
+This is a little program for a car-rent company. The company has 5 agencies in 3 locations and 20 cars for rent.
+*/
         // Block with cars information: this represent a register of related information linked by the car number that is on the array'codigos'.
         var codigos = [1234,2235,7521,8592,7653,9090,1534,2175,1025,1875,8575,4321,5789,3456,8765,5555,8888,6544,5554,9899]; // Array with car codes, each code is for one different car.
         var categorias = [2,5,1,3,4,5,10,8,1,2,3,4,5,10,7,6,1,4,7,8]; // Categories of each car of 'codigos' (1-10)
@@ -241,6 +234,3 @@
             }
             document.write("<br />");
         }
-    </script>
-</body>
-</html>
