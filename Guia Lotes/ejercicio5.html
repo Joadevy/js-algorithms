@@ -26,13 +26,12 @@
 
         function main() {
             carga(); // Classifies and loads the 'autosPA' array.
-            proceso();
-            listado_clientes();
-            rec_per_ubic();
-            muestra_autosPA();
-            muestra_catMA();
-            /*
-            muestra_agMA(); */
+            proceso(); // Requests the data and manages it.
+            listado_clientes(); // Shows the client list and their total payments.
+            rec_per_ubic(); // Shows the total collected in each location (1-3)
+            muestra_autosPA(); // Shows the amount of cars for rent in each agency (1-5)
+            muestra_catMA(); // Shows the most rented category
+            muestra_agMA(); // Displays the agencies with less than 2 rents.
         }
 
         function carga() {
@@ -232,7 +231,7 @@
         function muestra_catMA () {
             var max = 0;
             var maxc = 0;
-            
+
             for (i=0;i<catMA.length;i++){
                 if (i==0) {
                     max = catMA[0];
@@ -246,6 +245,18 @@
                 }
             }
             document.write('La categoria mas alquilada fue: ',maxc,' con la cantidad de ',max);
+            document.write("<br />");
+        }
+        
+        function muestra_agMA() {
+            document.write("<br />");
+            for (i=0;i<cantAlquileres.length;i++){
+                if (cantAlquileres[i]<2) {
+                    document.write('La agencia ',i+1,' realizo menos de 2 alquileres');
+                document.write("<br />");
+                }
+            }
+            document.write("<br />");
         }
         /*
         var cod = parseInt(prompt('Enter the car-code: ',''));
