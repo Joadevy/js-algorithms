@@ -13,6 +13,7 @@ Basically I took the [maxiprograma's](https://maxiprograma.com/) introductory gu
 - 'Guia WHILE' refers to practise with while loop.
 - 'Guia functions' is for exercises using js functions.
 - 'Guia ciclos++' contains some techniques and combinated loops.
+- 'Guia Lotes' contains a complete exercise using all of the previous 'guias'.
 
 
 
