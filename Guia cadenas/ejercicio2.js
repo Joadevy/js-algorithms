@@ -1,13 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ex 2</title>
-</head>
-<body>
-    <script>
+/* 
+The script load a word char by char in an array simulating the string behavior. Then asks the user if needs to change
+any letter in the word entered, If user enters 'y', it asks for a position and letter, replaces it and asks again.
+Finally displays the final word version.
+*/
+
         function load(length,array) { // Loads an array for a word with < length digits char by char.
             let i = 0;
 
@@ -53,6 +49,3 @@
         }
 
         main();
-    </script>
-</body>
-</html>
