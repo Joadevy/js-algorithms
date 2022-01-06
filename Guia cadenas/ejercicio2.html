@@ -22,7 +22,7 @@
             }
         }
 
-        function replace(pos,array) {
+        function replace(pos,array) { // If the user enters 'y', it replaces the char in the position entered, and then calls itself again.
             decision = wantReplace();
                 if (decision == 'y') {
                     let pos = parseInt(prompt('Enter the number-position do you want to replace: ',''));
