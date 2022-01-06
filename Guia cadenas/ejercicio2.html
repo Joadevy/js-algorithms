@@ -15,6 +15,8 @@
                 var char = prompt('Enter a character: ');
                 if (char != '.') {
                     array.push(char);
+                } else {
+                    i = length;
                 }
                 i++;
             }
@@ -30,20 +32,20 @@
                 }
         }
 
-        function wantReplace (){
+        function wantReplace (){ // Asks about a replace of a letter in the world.
             return d = prompt('Do you want to replace a char in the word entered? (y/n)','');
         }
 
-        function display(array){
+        function display(array){ // Shows the contain of the final version of the word entered/replaced.
             document.write("Your word is: ");
             array.forEach(element => {
                 document.write(element);
             });
         }
 
-        function main (){
+        function main (){ // Calls all the other functions
             var word = [];
-            var length = parseInt(prompt('Enter the number of chars for your word: ',''));
+            var length = parseInt(prompt('Enter the number of chars for your word: ','')); // Maybe it needs to be a function but not for this time :>
 
             load(length,word);
             replace(length,word);

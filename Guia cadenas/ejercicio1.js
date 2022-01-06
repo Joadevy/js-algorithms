@@ -3,13 +3,16 @@ The script prompts for a word char by char and then loads them into an array sim
 The word must be < 15 characters. Finally the script shows the amount of 'a' in the entered word.
 */
 
-        function load(length,array) { // Loads an array for a word with < length-1 digits char by char.
-            var i = 0;
-            var char = prompt('Enter a character: ');
+        function load(length,array) { // Loads an array for a word with < length digits char by char.
+            let i = 0;
 
-            while ((char != '.') && (i<length-1)) {
-                array.push(char);
-                char = prompt('Enter a character: ');
+            while (i<length) {
+                var char = prompt('Enter a character: ');
+                if (char != '.') {
+                    array.push(char);
+                } else {
+                    i = length;
+                }
                 i++;
             }
         }
