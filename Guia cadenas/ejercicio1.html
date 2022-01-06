@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 5</title>
+</head>
+<body>
+    <script>
+        function load(length,array) { // Load an array for a word with < length-1 digits char by char.
+            var i = 0;
+            var char = prompt('Enter a character: ');
+
+            while ((char != '.') && (i<length-1)) {
+                array.push(char);
+                char = prompt('Enter a character: ');
+                i++;
+            }
+        }
+
+        function countA (length,array) { // Count the amount of A in the array.
+            let i = 0;
+            var cont = 0;
+
+            while ((array[i]!='\0') && (i<length)) {
+                if (array[i] == 'a') {
+                    cont++;                 
+                }
+
+                i++;
+            }
+
+            return cont;
+        }
+
+        function showcountA(amount){
+            document.write('The amount of A in the word entered is: ',amount);
+        }
+
+        function main(){ 
+            var word = [];
+
+            load (15,word);
+            var amountA = countA (15,word);
+            showcountA(amountA);
+        }
+
+        main();
+
+    </script>
+</body>
+</html>
