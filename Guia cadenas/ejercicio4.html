@@ -22,7 +22,7 @@
             }
         }
 
-        function invert(length,array){
+        function invert(length,array){ // Inverts each letter of the entered word.
             let i = 0;
             let j = length;
             
@@ -34,17 +34,17 @@
             }
         }
 
-        function askLength(){
+        function askLength(){ // Asks for the length of the word'll enter.
             return l = parseInt(prompt('Enter the length of your word: ',''));
         }
 
-        function shows(array){
+        function shows(array){ // Shows each element of the array.
             array.forEach(element => {
                 document.write(element);
             });
         }
 
-        function main (){
+        function main (){ // Calls the other functions
             var word = [''];
             length = askLength();
 
