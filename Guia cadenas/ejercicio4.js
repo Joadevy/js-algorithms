@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ej 4</title>
-</head>
-<body>
-    <script>
+/* The script prompts for the length and a word letter by letter and loads it into an array so as to simulate a string.
+Then inverts the word and shows the result.
+*/
+
         function load(length,array) { // Loads an array for a word with < length digits char by char.
             let i = 0;
 
@@ -54,6 +48,3 @@
         }
 
         main();
-    </script>
-</body>
-</html>
