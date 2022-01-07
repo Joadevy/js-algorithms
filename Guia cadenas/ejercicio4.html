@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej 4</title>
+</head>
+<body>
+    <script>
+        function load(length,array) { // Loads an array for a word with < length digits char by char.
+            let i = 0;
+
+            while (i<length) {
+                var char = prompt('Enter a character: ');
+                if (char != '.') {
+                    array.push(char);
+                } else {
+                    i = length;
+                }
+                i++;
+            }
+        }
+
+        function invert(length,array){
+            let i = 0;
+            let j = length;
+            
+            for (i=0;i<j;i++){
+                let aux = array[i];
+                    array [i] = array [j];
+                    array [j] = aux;
+                    j--;
+            }
+        }
+
+        function askLength(){
+            return l = parseInt(prompt('Enter the length of your word: ',''));
+        }
+
+        function shows(array){
+            array.forEach(element => {
+                document.write(element);
+            });
+        }
+
+        function main (){
+            var word = [''];
+            length = askLength();
+
+            load(length,word);
+            invert (length,word);
+            shows(word);
+        }
+
+        main();
+    </script>
+</body>
+</html>
