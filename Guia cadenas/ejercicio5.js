@@ -1,13 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ex 5</title>
-</head>
-<body>
-    <script>
+/* 
+The script basically asks for two words and checks if the first one contains the second one. It uses arrays for simulate strings and needs to charge 
+the words char by char. Then compares if there are matches letter by letter and displays the result. 
+*/
+
         function load(length,array) { // Loads an array for a word with < length digits char by char.
             let i = 0;
 
@@ -58,7 +53,7 @@
             return l = parseInt(prompt('Enter the length of your word: ',''));
         }
 
-        function shows(result) {
+        function shows(result) { // Displays the final result
             if (result==1){
                 document.write("The word was in the string");
             } else {
@@ -66,7 +61,7 @@
             }
         }
 
-        function main (){
+        function main (){ // Contains the arrays and calls all the other functions.
             var string = [];
             var word = [];
 
@@ -79,7 +74,3 @@
         }
 
         main();
-        
-    </script>
-</body>
-</html>
