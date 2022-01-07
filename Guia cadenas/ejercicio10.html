@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 10</title>
+</head>
+<body>
+    <script>
+        function load(array) { // Loads an array for a word with < length digits char by char.
+            var char = prompt('Enter a character: ');
+
+            while (char != '.') {
+                    array.push(char);
+                    char = prompt('Enter a character: ');
+            }
+        }
+
+        function count(array) {
+            var cont = 0;
+            array.forEach(element => {
+                cont++;
+            });
+
+            return cont;
+        }
+
+        function isValid (array){
+            if ((array[0]=='z') && (array[1]=='z') && (array[2]=='z')){
+                return false;
+            } else {
+                return true;
+            }
+        }
+
+        function copy(array) {
+            return array.splice(0,array.length);
+        }
+
+        function show(array) {
+            document.write('The longest word entered was: ');
+            array.forEach(element => {
+                document.write(element);
+            });
+        }
+
+        function process(chars_max,word,wordLongest) {
+                let wordChars = count(word);
+                
+                if (wordChars > chars_max) {
+                    return wordLongest = copy(word);
+                }
+        }
+
+        function main (){
+            var word = [];
+            var wordLongest = [];
+            var flag = false;
+            var chars_max = 0;
+
+            load(word);
+            valid = isValid(word);
+            while (valid == true) {
+                if ((flag == false)&&(valid == true)) {
+                    wordLongest = copy(word);
+                    chars_max = count (wordLongest);
+                    flag = true;
+
+                } else {
+                    if (flag != false) {
+                        wordLongest = process(chars_max,word,wordLongest);
+                        chars_max = count(wordLongest);
+                    }
+                }
+
+                load(word);
+                valid = isValid(word);
+            }
+
+        if (valid == false) {
+                alert('The zzz is the final string, thanks for using it :)');
+                show(wordLongest);
+                document.write('The amount of char of the longest word is: ',chars_max);
+            }
+        }
+
+        main();
+    </script>
+</body>
+</html>
