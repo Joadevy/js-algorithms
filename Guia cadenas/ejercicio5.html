@@ -22,7 +22,7 @@
             }
         }
 
-        function whereIs (lengthS, string,word){
+        function whereIs (lengthS, string,word){ // Searchs if there is a match for the first letter of the word and any position of the string, if there is, saves the position.
             for (i=0;i<lengthS;i++){
                 if (string[i]==word[0]) {   
                     return i;
@@ -31,7 +31,7 @@
             return 'n';
         }
 
-        function isIn(lengthS,lengthW,word,string){
+        function isIn(lengthS,lengthW,word,string){ // If there was a match, it compares each position if there are matches after the first to the final letter of the word.
             let index = whereIs(lengthS,string,word);
             var j = 1;
             var match = false;
