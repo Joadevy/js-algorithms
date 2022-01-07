@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 5</title>
+</head>
+<body>
+    <script>
+        function load(length,array) { // Loads an array for a word with < length digits char by char.
+            let i = 0;
+
+            while (i<length) {
+                var char = prompt('Enter a character: ');
+                if (char != '.') {
+                    array.push(char);
+                } else {
+                    i = length;
+                }
+                i++;
+            }
+        }
+
+        function whereIs (lengthS, string,word){
+            for (i=0;i<lengthS;i++){
+                if (string[i]==word[0]) {   
+                    return i;
+                } 
+            }
+            return 'n';
+        }
+
+        function isIn(lengthS,lengthW,word,string){
+            let index = whereIs(lengthS,string,word);
+            var j = 1;
+            var match = false;
+
+            if (index != 'n') {
+                do {
+                    if (word[j] == string[j+index]) {
+                        match = true; 
+                        j++;
+                    } else {
+                        match = false;
+                    }
+                } while ((match==true) && (j < lengthW)); 
+            }      
+            
+            if (match == true) {
+                    return 1;
+                } else {
+                    return 0;
+                }
+        }
+
+        function askLength(){ // Asks for the length of the word'll enter.
+            return l = parseInt(prompt('Enter the length of your word: ',''));
+        }
+
+        function shows(result) {
+            if (result==1){
+                document.write("The word was in the string");
+            } else {
+                document.write("The word wasn't in the string");
+            }
+        }
+
+        function main (){
+            var string = [];
+            var word = [];
+
+            var lengthS = askLength();
+            load (lengthS,string);
+            var lengthW = askLength();
+            load (lengthW,word);
+            var r = isIn (lengthS, lengthW, word, string);
+            shows(r);
+        }
+
+        main();
+        
+    </script>
+</body>
+</html>
