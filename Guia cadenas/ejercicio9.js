@@ -1,13 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ex 9</title>
-</head>
-<body>
-    <script>
+/*
+The script prompts for two words char by char with the same length entered into arrays. Then it copies the second 
+string into the first (concatenation) and finally shows it.
+*/
+
         function load(length,array) { // Loads an array for a word with < length digits char by char.
             let i = 0;
 
@@ -51,6 +46,3 @@
         }
 
         main();
-    </script>
-</body>
-</html>
