@@ -45,12 +45,49 @@
             });
         }
 
-        function process(chars_max,word,wordLongest) {
+       /* function process(chars_max,word,wordLongest) {
                 let wordChars = count(word);
                 
                 if (wordChars > chars_max) {
                     return wordLongest = copy(word);
                 }
+        }
+        */
+
+        function isGreater (chars_max,word,wordLongest){
+            let wordChars = count(word);
+                
+                if (wordChars > chars_max) {
+                    return wordLongest = copy(word);
+                }
+        }
+
+        function process(flag,valid,chars_max,wordLongest,word) {
+            while (valid == true) {
+                if ((flag == false)&&(valid == true)) {
+                    wordLongest = copy(word);
+                    chars_max = count (wordLongest);
+                    flag = true;
+
+                } else {
+                    if (flag != false) {
+                        wordLongest = isGreater(chars_max,word,wordLongest);
+                        chars_max = count(wordLongest);
+                    }
+                }
+
+                load(word);
+                valid = isValid(word);
+            }
+            return wordLongest;
+        }
+
+        function display(wordLongest){ // Receives the wordLongest and shows it + the amount of letters of it.
+            alert('The zzz is the final string, thanks for using it :)');
+            show(wordLongest);
+            var char_max = count(wordLongest);
+            document.write("<br />");
+            document.write('The amount of char of the longest word is: ',char_max);
         }
 
         function main (){
@@ -61,28 +98,8 @@
 
             load(word);
             valid = isValid(word);
-            while (valid == true) {
-                if ((flag == false)&&(valid == true)) {
-                    wordLongest = copy(word);
-                    chars_max = count (wordLongest);
-                    flag = true;
-
-                } else {
-                    if (flag != false) {
-                        wordLongest = process(chars_max,word,wordLongest);
-                        chars_max = count(wordLongest);
-                    }
-                }
-
-                load(word);
-                valid = isValid(word);
-            }
-
-        if (valid == false) {
-                alert('The zzz is the final string, thanks for using it :)');
-                show(wordLongest);
-                document.write('The amount of char of the longest word is: ',chars_max);
-            }
+            wordLongest = process(flag,valid,chars_max,wordLongest,word);
+            display(wordLongest);
         }
 
         main();
