@@ -17,7 +17,7 @@
             }
         }
 
-        function count(array) {
+        function count(array) { // Counts the elements of an array and returns it.
             var cont = 0;
             array.forEach(element => {
                 cont++;
@@ -26,7 +26,7 @@
             return cont;
         }
 
-        function isValid (array){
+        function isValid (array){ // Checks if the word entered is different than 'zzz'
             if ((array[0]=='z') && (array[1]=='z') && (array[2]=='z')){
                 return false;
             } else {
@@ -34,27 +34,17 @@
             }
         }
 
-        function copy(array) {
+        function copy(array) { // It copies the elements of an array in another and then empty it.
             return array.splice(0,array.length);
         }
 
-        function show(array) {
-            document.write('The longest word entered was: ');
+        function show(array) { // Display each element of an array.
             array.forEach(element => {
                 document.write(element);
             });
         }
 
-       /* function process(chars_max,word,wordLongest) {
-                let wordChars = count(word);
-                
-                if (wordChars > chars_max) {
-                    return wordLongest = copy(word);
-                }
-        }
-        */
-
-        function isGreater (chars_max,word,wordLongest){
+        function isGreater (chars_max,word,wordLongest){ // Compares the word entered with the wordLongest for finding the longest and loads it in wordLongest.
             let wordChars = count(word);
                 
                 if (wordChars > chars_max) {
@@ -62,7 +52,10 @@
                 }
         }
 
-        function process(flag,valid,chars_max,wordLongest,word) {
+        function process(valid,wordLongest,word) { // Processes the control variables for managment the different words entered.
+            var flag = false;
+            var chars_max = 0;
+
             while (valid == true) {
                 if ((flag == false)&&(valid == true)) {
                     wordLongest = copy(word);
@@ -84,21 +77,20 @@
 
         function display(wordLongest){ // Receives the wordLongest and shows it + the amount of letters of it.
             alert('The zzz is the final string, thanks for using it :)');
+            document.write('The longest word entered was: ');
             show(wordLongest);
             var char_max = count(wordLongest);
             document.write("<br />");
             document.write('The amount of char of the longest word is: ',char_max);
         }
 
-        function main (){
+        function main (){ // Invokes the different functions.
             var word = [];
             var wordLongest = [];
-            var flag = false;
-            var chars_max = 0;
 
             load(word);
-            valid = isValid(word);
-            wordLongest = process(flag,valid,chars_max,wordLongest,word);
+            var valid = isValid(word);
+            wordLongest = process(valid,wordLongest,word);
             display(wordLongest);
         }
 
