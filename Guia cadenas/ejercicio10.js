@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ex 10</title>
-</head>
-<body>
-    <script>
+/*
+The script prompts for different words char by char. For separating each word the user needs to introduce a dot-char '.'
+Then for finish the program, the user needs to introduce the 'zzz' word (char by char). Basically the script loads the words in
+an array and compares if the word is valid (different than 'zzz') and checks if the introduced word is longest than. Finally
+shows the result and the amount of letters of the longest word introduced. 
+*/
+
         function load(array) { // Loads an array for a word with < length digits char by char.
             var char = prompt('Enter a character: ');
 
@@ -95,6 +92,3 @@
         }
 
         main();
-    </script>
-</body>
-</html>
