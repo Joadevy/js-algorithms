@@ -15,6 +15,7 @@ Basically I took the [maxiprograma's](https://maxiprograma.com/) introductory gu
 - 'Guia ciclos++' contains some techniques and combinated loops.
 - 'Guia Lotes' contains a complete exercise using all of the previous 'guias'.
 - 'Guia cadenas' is for exercises about arrays simulating the string behavior.
+- 'Guia matrices' is for some tests with matrices in js.
 
 
 
