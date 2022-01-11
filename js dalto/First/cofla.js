@@ -1,4 +1,4 @@
-// Script super basico y con repeticiones constantes, se hizo solo usando el contenido de condicionales.
+// A basic script only using the contents of the first chapter (only conditional sentences)
 
 let montoCofla = prompt('Ingrese el monto de Cofla: ','');
 let vueltoCofla;
@@ -11,14 +11,14 @@ if ((montoCofla >= 0.6) && (montoCofla <1)) {
     alert('Alcanza para el palito de crema');
 } else if((montoCofla >=1.6) && (montoCofla <1.7)) {
     vueltoCofla = montoCofla - 1.6;
-    alert('Alcanza para el heladix');
+    alert('Alcanza para el tricolor');
 }
 else if((montoCofla >= 1.7) && (montoCofla <1.8)) {
     vueltoCofla = montoCofla - 1.7;
-    alert('Alcanza para el heladovich');
+    alert('Alcanza para el bombon suizo');
 } else if((montoCofla >= 1.8) && (montoCofla <2.9)) {
     vueltoCofla = montoCofla - 1.7;
-    alert('Alcanza para el helardo');
+    alert('Alcanza para el cono grande');
 } else if (montoCofla >= 2.9){
     vueltoCofla = montoCofla - 2.9;
     alert('Alcanza para potecito o un cuarto');

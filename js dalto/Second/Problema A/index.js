@@ -1,3 +1,7 @@
+/* A script for solve the problem A. It requires to enter the age and the entered hour of a person. 
+Then verifies if the person is >= 18 yo. Also checks looking for the person who entered first after 2am because they have a free ticket.
+*/
+
 const ingresoPersona = () => {
     var flag = false;
     var edadPersona = parseInt(prompt('Ingrese edad: ',''));

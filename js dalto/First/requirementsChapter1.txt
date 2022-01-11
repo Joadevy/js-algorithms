@@ -1,0 +1,9 @@
+THREE boys want to buy an ice cream
+They want to buy the MOST EXPENSIVE ice cream with the money they have.
+They each have different amounts of money and there is a cost table for each ice cream.
+
+Problem A:
+- Enter the amount each guy has and show the most expensive one.
+- If there are two or more, show both.
+- Indicate the change. 
+
