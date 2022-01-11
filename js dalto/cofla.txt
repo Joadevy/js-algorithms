@@ -1,0 +1,20 @@
+TRES chicos quieren comprar un helado
+los PRECIOS NO ESTAN al lado de cada helado
+Quieren comprar el helado MAS CARO con el dinero que tienen.
+Cada uno tiene distinta cantidad de dinero y hay una tabla de costo para cada helado.
+
+Problema A:
+- Ingresar el monto que tiene cada chico y mostrar el mas caro.
+- Si hay dos o mas, mostrar ambos.
+- Indicar el vuelto. 
+
+Problema B
+- Si le alcanza uno, compra.
+- Si le alcanza dos, compra dos.
+- Si le alcanza tres y sobra, compra dos pero regala el vuelto.
+- Mostrar compra y vuelto.
+
+Problema C
+- Miente, se le da una descarga.
+- No miente, no hacer nada.
+- Si no se decide, aclarar que la pregunta sea mas clara.

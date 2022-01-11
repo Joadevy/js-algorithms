@@ -1,0 +1,17 @@
+Joven gano loteria
+
+Problema 1
+personas >= 18
+primer persona > 2 am no paga.
+
+Problema 2
+Mini sistema alumnos
+
+> Registra presentes (P), ausentes (A). Pasados 30 dias, registrar
+situacion final del alumno.
+> Maximo 10% de ausencias, si tiene mas, reprobado.
+
+Problema 3
+Crear una calculadora, sumar, restar, multiplicar, dividir.
+
+
