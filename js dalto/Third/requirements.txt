@@ -13,14 +13,13 @@ Cada celular debe poder: (metodos)
 	- takePhotos
 	- record
 
-Problema B:
 > Hay DOS celulares mas de alta gama que pueden hacer todo lo anterior (herencia)
 y ademas:
 	- Slowmotion recording
 	- Facial recognition
 	- Extra camera
 
-Problema C:
+Problema B:
 > Existen 7 aplicaciones pero solo se pueden descargar dos, se debe elegir. 
 Crear un sistema que ayude a decidir cual descargar.
 
