@@ -1,0 +1,37 @@
+Problema A:
+> Sistema para mostrar particularidades de TRES celulares.
+Cada celular tiene: (atributos)
+	- color
+	- weight
+	- screenResolution
+	- camera
+	- ram
+
+Cada celular debe poder: (metodos)
+	- turnOn
+	- reset
+	- takePhotos
+	- record
+
+Problema B:
+> Hay DOS celulares mas de alta gama que pueden hacer todo lo anterior (herencia)
+y ademas:
+	- Slowmotion recording
+	- Facial recognition
+	- Extra camera
+
+Problema C:
+> Existen 7 aplicaciones pero solo se pueden descargar dos, se debe elegir. 
+Crear un sistema que ayude a decidir cual descargar.
+
+Cada aplicacion tendra: (atributos)
+	- amountOfDownloads
+	- scoreReputation
+	- weight
+
+Cada aplicacion se debe poder: (metodos)
+	- open
+	- close
+	- uninstall
+
+
