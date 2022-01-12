@@ -1,17 +1,15 @@
-Joven gano loteria
+Problem 1
+control for persons >= 18
+first person >2 am does not pay.
 
-Problema 1
-personas >= 18
-primer persona > 2 am no paga.
+Problem 2
+Mini system for student management
 
-Problema 2
-Mini sistema alumnos
+> Record present (P), absent (A). After 30 days, record
+student's final situation.
+> Maximum 10% of absences, if more than that, failed.
 
-> Registra presentes (P), ausentes (A). Pasados 30 dias, registrar
-situacion final del alumno.
-> Maximo 10% de ausencias, si tiene mas, reprobado.
-
-Problema 3
-Crear una calculadora, sumar, restar, multiplicar, dividir.
+Problem 3
+Create a calculator, for addition, subtraction, multiplication, division.
 
 
