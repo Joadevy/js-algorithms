@@ -1,3 +1,8 @@
+/* The script is for a cellphone managment system using OOP. It has two classes, the first one for standard cellphones and
+the second one for premium cellphones. Each of have features and characteristics. The premium models have the same characteristics and features
+ but add a few more so, they inherit the standards attributes and methods. 
+*/
+
 class cellphone { // Defining the cellphone class with the attributes and methods.
     constructor(c,w,sr,cam,ram){
         this.color = c;
@@ -56,19 +61,15 @@ class cellphone { // Defining the cellphone class with the attributes and method
 }
 
 // Instantianding the three standard cellphones:
-
 const mobileOne = new cellphone("blue","150 grams","HD","32mp","3gb");
 const mobileTwo = new cellphone ("gray","160 grams","HD","24 mp","4gb");
 const mobileThree = new cellphone ("black","145 grams","HD","64 mp","3gb");
 
 // Testing the standard methods.
-
-/*
 mobileOne.turnOn ();
 mobileOne.takePhoto ();
 mobileOne.reset();
 mobileOne.turnOn ();
-*/
 
 
 class cellphonePremium extends cellphone { // Defining the class for the cellphone premium, it inherits attributes for the cellphone and adds an extra cam.
@@ -93,12 +94,10 @@ class cellphonePremium extends cellphone { // Defining the class for the cellpho
 }
 
 // Instantianding the two premium cellphones:
-
 mobileOnePremium = new cellphonePremium ("black","140 grams","Full HD","64mp","6gb","32mp");
 mobileTwoPremium = new cellphonePremium ("pink","145 grams","Full HD","48mp","8gb","16mp");
 
 // Testing the standard (inhered) and premium methods.
-
 mobileOnePremium.turnOn ();
 mobileOnePremium.facialRecognition ();
 mobileTwoPremium.slowMotionRecording();

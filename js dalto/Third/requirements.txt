@@ -1,20 +1,20 @@
-Problema A:
-> Sistema para mostrar particularidades de TRES celulares.
-Cada celular tiene: (atributos)
+Problem A:
+> System to show particulars of THREE cell phones.
+Each cell phone has: (attributes)
 	- color
 	- weight
 	- screenResolution
 	- camera
 	- ram
 
-Cada celular debe poder: (metodos)
+Each cell phone must be able to: (methods)
 	- turnOn
 	- reset
 	- takePhotos
 	- record
 
-> Hay DOS celulares mas de alta gama que pueden hacer todo lo anterior (herencia)
-y ademas:
+> There are TWO more high-end cell phones that can do all of the above (inheritance)
+and in addition:
 	- Slowmotion recording
 	- Facial recognition
 	- Extra camera
