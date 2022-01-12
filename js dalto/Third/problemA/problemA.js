@@ -5,22 +5,53 @@ class cellphone { // Defining the cellphone class with the attributes and method
         this.screenRes = sr;
         this.camera = cam;
         this.ram = ram;
+        this.status = false;
     }
 
     turnOn () {
-        alert ('Turning On, please wait');
+        if (this.status == false) {
+            alert ('Turning On, please wait');
+            this.status = true;
+        } else {
+            alert ('The cellphone is already on!');
+        }
+    }
+
+    turnOff (){
+        if (this.status == true) {
+            alert ('Turning Off, please wait');
+            this.status = false;
+        } else {
+            this.turnOn ();
+        }
     }
 
     reset () {
-        alert ('Reset-process iniciated');
+        if (this.status == true) {
+            alert ('Reset-process iniciated');
+            this.turnOff ();
+            this.turnOn();
+        } else {
+            alert (`The cellphone is off!`);        
+        }
     }
 
     takePhoto () {
-        alert ('Taking a photo');
+        alert (`Taking a photo with a ${this.screenRes} resolution`);
     }
 
     record () {
-        alert ('Recording');
+        alert (`Recording  with a ${this.screenRes} resolution`);
+    }
+
+    showInfo () {
+        return `
+        Color: <b>${this.color}</b> <br>
+        Weigth: <b>${this.weigth}</b> <br>
+        Screen Resolution: <b>${this.screenRes}</b> <br>
+        Ram: <b>${this.ram}</b> <br>
+        Camera Resolution: <b>${this.camera}</b> <br>
+        `
     }
 }
 
@@ -31,9 +62,14 @@ const mobileTwo = new cellphone ("gray","160 grams","HD","24 mp","4gb");
 const mobileThree = new cellphone ("black","145 grams","HD","64 mp","3gb");
 
 // Testing the standard methods.
+
+/*
 mobileOne.turnOn ();
 mobileOne.takePhoto ();
 mobileOne.reset();
+mobileOne.turnOn ();
+*/
+
 
 class cellphonePremium extends cellphone { // Defining the class for the cellphone premium, it inherits attributes for the cellphone and adds an extra cam.
     constructor(c,w,sr,cam,ram,extraCam) {
@@ -42,11 +78,17 @@ class cellphonePremium extends cellphone { // Defining the class for the cellpho
     }
 
     slowMotionRecording () {            // A new method for a premium function.
-        alert ('Recording in slow motion mode');
+        alert (`Recording in slow motion mode with the extra cam in a resolution of ${this.extraCamera}`);
     }
 
     facialRecognition () {              // A new method for a premium function.
         alert ('Validating the face');
+    }
+
+    showInfoPremium (){ // A new method that uses the showInfo method adding the extra camera info (exclusive of premium mobiles)
+        return this.showInfo() + `
+        Extra camera resolution: <b>${this.extraCamera}</b> <br>
+        `;
     }
 }
 
@@ -59,6 +101,27 @@ mobileTwoPremium = new cellphonePremium ("pink","145 grams","Full HD","48mp","8g
 
 mobileOnePremium.turnOn ();
 mobileOnePremium.facialRecognition ();
-mobileTwoPremium.reset ();
+mobileTwoPremium.slowMotionRecording();
+mobileTwoPremium.reset();
+
+// Showing the standard mobiles specs
+document.write(`
+<u>Standard mobile phones:</u> <br>
+${mobileOne.showInfo()} <br>
+${mobileTwo.showInfo()} <br>
+${mobileThree.showInfo()} <br>
+`)
+;
+
+// Showing the standard premium specs
+document.write(`
+<u>Premium mobile phones:</u> <br>
+${mobileOnePremium.showInfoPremium()} <br>
+${mobileTwoPremium.showInfoPremium()} <br>
+`)
+;
+
+
+
 
 
