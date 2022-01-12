@@ -1,5 +1,5 @@
 /* The script simulates the behavior of a calculator. It's for the sum,substract,product and division operations.
-Uses an array for saving the numbers, type-operation and result and then manages all from it.*/
+Uses an array for saving the numbers, type-operation and result and then manages all from it. */
 
 var numbers = [];
 
