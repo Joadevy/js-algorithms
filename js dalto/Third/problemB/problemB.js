@@ -1,5 +1,9 @@
-class App {
-    constructor(n,aod,s,w){
+/* The script is for using and showing data for some apps. Each app has name, amount of downloads, reputation and weight, also has
+three features: open, close and uninstall.
+*/
+
+class App { // Creating the app with methods & attributes. 
+    constructor(n,aod,s,w){ 
         this.name = n;
         this.amountOfDownloads = aod;
         this.scoreReputation = s;
@@ -46,12 +50,16 @@ class App {
     }
 }
 
+// Instanciating two apps
 const fb = new App("Facebook",15000,"4.3 stars","200mb");
 const tw = new App ("Twitter",12500,"4.8 stars","150mb");
 
-//fb.open();
-//fb.close();
-//fb.uninstall();
+// Testing some methods
+fb.open();
+fb.close();
+fb.uninstall();
+
+//Showing the apps info
 document.write(`
 <u style = "color:red;">APP LIST:</u> <br><br>
 ${fb.showInfo()} <br>
