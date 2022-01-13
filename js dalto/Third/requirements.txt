@@ -1,4 +1,4 @@
-Problem A:
+cd dProblem A:
 > System to show particulars of THREE cell phones.
 Each cell phone has: (attributes)
 	- color
@@ -19,18 +19,17 @@ and in addition:
 	- Facial recognition
 	- Extra camera
 
-Problema B:
-> Existen 7 aplicaciones pero solo se pueden descargar dos, se debe elegir. 
-Crear un sistema que ayude a decidir cual descargar.
+Problem B:
+> There are 7 applications but only two can be downloaded, a choice must be made. 
+Create a system that helps to decide which one to download.
 
-Cada aplicacion tendra: (atributos)
+Each application will have: (attributes)
 	- amountOfDownloads
 	- scoreReputation
 	- weight
 
-Cada aplicacion se debe poder: (metodos)
+Each application should be able to: (methods)
 	- open
 	- close
 	- uninstall
-
 
