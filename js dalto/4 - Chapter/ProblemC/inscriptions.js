@@ -1,3 +1,10 @@
+/* 
+The script is a mini-system for loading students in courses. They requirements were:
+- Ask for a course and students name.
+- Check if the course have more than 7 students.
+- If the course have less than 7, push the new student into the course, if it not, alert this situation.
+*/
+
 class Subject {
     constructor(name,students) {
         this.name = name;
@@ -22,7 +29,7 @@ var Subjects = [Phisics,Art,History]; // Array of the subjects
 const askForSubject = () => prompt("Enter the name of subject: ",'');
 const askForStudent = () => prompt ("Enter the students name: ",'');
 
-const validInscription = (sub) => {
+const validInscription = (sub) => { // Checks if there are less than 7 student in the course "sub"
     for (let subj in Subjects) {
         if (Subjects[subj].name == sub) {
                 if (Subjects[subj].amountOfStudents.length < 7) {
@@ -34,11 +41,19 @@ const validInscription = (sub) => {
     }
 }
 
-const loadInscription = (studentName,sub) => {
+const loadInscription = (studentName,sub) => { // Pushes a new student in the "sub" course.
     for (let subject in Subjects) {
         if(Subjects[subject].name == sub) {
-            alert(subject);
             Subjects[subject].set(studentName);
+            alert ('Registered succesfull');
+        }
+    }
+}
+
+const showNewAmount = (sub) => { // Shows the students in the course entered (it doesn't matter if they have > 7 students)
+    for (let subject of Subjects) {
+        if (subject.name == sub) {
+            document.write(`The students actually registered in the ${subject.name} course are ${subject.amountOfStudents}`);
         }
     }
 }
@@ -55,8 +70,7 @@ const main = () => {
     else {
         alert ('Invalid subject');
     }
-    let show = Subjects[2].amountOfStudents;
-    document.write(show);
+    showNewAmount(subject);
 }
 
 main ();
