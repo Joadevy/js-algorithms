@@ -20,8 +20,9 @@ class Subject {
 
     searchStudent (student) {
         if (this.students.includes(student) == true) {
-            this.showSubjectName ();
+            this.showSubjectName (); 
             this.showProfessor ();
+            document.write(`<br>`);
         }
     }
 }
@@ -33,8 +34,12 @@ const English = new Subject ("English","Ruben Maly",["Jorge","Ricardo","Maria","
 
 let Subjects = [Chemistry,Phisics,English]; // Saving all the subjects in an array.
 
+// Functions for prompt data
+const askForStudent = () => prompt ("Enter the student's name: ",'');
+const askForSubject = () => prompt ("Enter the subject's name: ",'');
+
 const searchSubject = () => { // Searchs for a subject and then shows the students and professor.
-    let sub = prompt ('Enter the subject for search: ','');
+    let sub = askForSubject ();
     for (let subject in Subjects) {
         if(Subjects[subject].subject == sub) {
             Subjects[subject].showProfessor();
@@ -45,17 +50,62 @@ const searchSubject = () => { // Searchs for a subject and then shows the studen
 
 const amountClasses = () => { // Asks for a students name and searchs looking for the number of classes that they are enrolled in.
     let cont = 0;
-    let stud = prompt ("Enter the student's name: ",'');
+    let stud = askForStudent();
     for (let subject in Subjects) {
         for (let student in Subjects[subject].students )
-        if (Subjects[subject].students[student] == stud) {
-            cont++;
-        }
+            if (Subjects[subject].students[student] == stud) {
+                cont++;
+            }
     }
     return cont;
 }
 
-// searchSubject ();
-let contador = amountClasses ();
-document.write(contador);
+const showAmountClasses = () => {
+    let amount = amountClasses ();
+    document.write('The amount of courses that the student has registered is: ',amount);
+}
+
+
+// Function that works fine but isn't very readable.
+/* const showClasses = () => { 
+    let stud = askForStudent ();
+    for (let subject in Subjects) {
+        for (let student in Subjects[subject].students) {
+            if (Subjects[subject].students[student] == stud) {
+                Subjects[subject].showSubjectName();
+                Subjects[subject].showProfessor();
+            }
+        }
+    }
+} */
+
+const showClasses = () => { // The function asks for a student and shows the courses and their professors that the student has registered.
+    let stud = askForStudent ();
+    for (let subject in Subjects) {
+        Subjects[subject].searchStudent(stud);
+    }
+}
+
+const mainMenu = () => {
+    let option = parseInt(prompt('Enter the option (1,2,3): ',''));
+    switch (option) {
+        case 1:
+            searchSubject();
+        break;
+
+        case 2:
+            showAmountClasses();
+        break;
+
+        case 3:
+            showClasses();
+        break;
+    
+        default:
+            alert('This option is not valid, please try again');
+        break;
+    }
+}
+
+mainMenu ();
 
