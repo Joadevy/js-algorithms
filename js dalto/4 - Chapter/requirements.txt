@@ -1,0 +1,12 @@
+Problem A
+
+> Perfeccionar la calculadora realizada en el segundo capitulo.
+- Agregar las operaciones raiz cuadrada, raiz cubica y potencia.
+
+Problem B
+> 12 materias de una universidad tienen asignado un profesor y alumnos asignados.
+	- Crear funcion que al pasar por parametro una materia y devuelva profesor asignado y alumnos.
+	- Funcion que indique en cuantas clases esta el alumno de nombre "Cofla"	
+	- Nombrar las clases donde esta "cofla" y los profesores de cada una.
+
+
