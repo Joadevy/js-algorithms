@@ -1,3 +1,9 @@
+/* The script is for solving the problem B. Its about an mini-system for subject managment in a school/college. The requirements were:
+- Show the professor and students by entering a subjects name.
+- Show the amount of courses a student has registered.
+- Display the courses and their professors of a student.
+*/
+
 class Subject {
     constructor(name,prof,stud){
         this.subject = name;
