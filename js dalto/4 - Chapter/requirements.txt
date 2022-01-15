@@ -5,8 +5,8 @@ Problem A
 Problem B
 > 12 subjects of a university have assigned a teacher and students.
 	- Create a function that when passing by parameter a subject, returns assigned teacher and students.
-	- Function that indicates how many classes the student named "Cofla" is in.	
-	- Name the classes where "cofla" is and the teachers of each one.
+	- Function that indicates how many classes a student is in.	
+	- Name the classes where a students name entered is and the teachers of each one.
 
 Problem C
 > Mini student enrollment system
