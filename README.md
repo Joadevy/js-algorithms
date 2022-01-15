@@ -1,8 +1,9 @@
 
 # Js Algorithms
 
-This repository is for containing an introductory practice of algorithms in javascript so as to start working with the language. 
-Basically I took the [maxiprograma's](https://maxiprograma.com/) introductory guide for algorithms and his exercises and I adappted it for start learning javascript. 
+This repository is for containing different practices of algorithms in javascript so as to start working with the language and evolving on it.
+Firstly I took the [maxiprograma's](https://maxiprograma.com/) introductory guide for algorithms and his exercises and I adappted it for start learning javascript. 
+Then I took the [Lucas Dalto's](https://www.youtube.com/c/soydalto) javascript course (junior level) and did the exercises proposed for learning.
 
 
 
