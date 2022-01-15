@@ -17,11 +17,12 @@ Then I took the [Lucas Dalto's](https://www.youtube.com/c/soydalto) javascript c
 - 'Guia Lotes' contains a complete exercise using all of the previous 'guias'.
 - 'Guia cadenas' is for exercises about arrays simulating the string behavior.
 - 'Guia matrices' is for some tests with matrices in js.
+- 'js dalto' contains exercises with different things of js.
 
 
 
 ## Acknowledgements
 
  - [Awesome introductory algorithm exercises](https://maxiprograma.com/)
- - [Awesome channel for learning this kind of stuff](https://www.youtube.com/c/MaxiPrograma)
+ - [Really good video for the first steps in JS](https://www.youtube.com/watch?v=z95mZVUcJ-E&t=23556s)
 
