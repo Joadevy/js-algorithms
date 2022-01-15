@@ -1,15 +1,15 @@
-Problem 1
+Problem A
 control for persons >= 18
 first person >2 am does not pay.
 
-Problem 2
+Problem B
 Mini system for student management
 
 > Record present (P), absent (A). After 30 days, record
 student's final situation.
 > Maximum 10% of absences, if more than that, failed.
 
-Problem 3
+Problem C
 Create a calculator, for addition, subtraction, multiplication, division.
 
 
