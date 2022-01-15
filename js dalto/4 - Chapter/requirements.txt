@@ -1,16 +1,16 @@
 Problem A
 
-> Perfeccionar la calculadora realizada en el segundo capitulo.
-- Agregar las operaciones raiz cuadrada, raiz cubica y potencia.
+> To refine the calculator realized in the second chapter.
+- Add the operations square root, cube root and power.
 
 Problem B
-> 12 materias de una universidad tienen asignado un profesor y alumnos asignados.
-	- Crear funcion que al pasar por parametro una materia, devuelva profesor asignado y alumnos.
-	- Funcion que indique en cuantas clases esta el alumno de nombre "Cofla"	
-	- Nombrar las clases donde esta "cofla" y los profesores de cada una.
+> 12 subjects of a university have assigned a teacher and students.
+	- Create a function that when passing by parameter a subject, returns assigned teacher and students.
+	- Function that indicates how many classes the student named "Cofla" is in.	
+	- Name the classes where "cofla" is and the teachers of each one.
 
 Problem C
-> Mini sistema inscripcion alumnos
-	- Preguntar en que materia se quiere inscribir
-	- Preguntar si hay 20 inscriptos negar la inscripcion.
-	- Si hay menos de 20, inscribirlo y anadirlo a la lista de alumnos.
+> Mini student enrollment system
+	- Ask in which subject you want to register
+	- Ask if there are 20 students enrolled, deny enrollment.
+	- If there are less than 20 students, register them and add them to the list of students.
