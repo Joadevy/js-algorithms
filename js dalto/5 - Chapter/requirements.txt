@@ -1,0 +1,21 @@
+Problem A
+Comprobar el estado de un alumno en distintas materias.
+
+Para aprobar las materias un alumno debe tener:
+> 90% de asistencias, 
+> promedio en la materia >+ 7 y 
+> 75% de los trabajos practicos entregados.
+ 
+Se necesita:
+- Solicitar datos y decirle si aprueba o no.
+- Utilizar colores representativos en consola (por ejemplo si no aprueba en rojo)
+
+Problem B
+Una persona necesita organizar sus horarios a lo largo de 14 dias (336 horas) 
+Se organiza semanalmente: 24h para estudiar, 24hs para hacer tps, 56horas de trabajo y 8h para tareas del hogar.
+
+Se necesita:
+- Organizar las tareas diariamente.
+- Utilizar la consola para organizarlo.
+- Cada tarea no debe superar las 4hs.
+
