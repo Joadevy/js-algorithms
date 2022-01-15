@@ -1,5 +1,4 @@
 Problem A
-
 > To refine the calculator realized in the second chapter.
 - Add the operations square root, cube root and power.
 
@@ -12,5 +11,5 @@ Problem B
 Problem C
 > Mini student enrollment system
 	- Ask in which subject you want to register
-	- Ask if there are 20 students enrolled, deny enrollment.
-	- If there are less than 20 students, register them and add them to the list of students.
+	- Ask if there are 20 (I used 7 but its the same) students enrolled, deny enrollment.
+	- If there are less than 20 students (I used 7 but its the same), register them and add them to the list of students.
