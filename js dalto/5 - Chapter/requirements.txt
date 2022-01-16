@@ -1,21 +1,21 @@
 Problem A
-Comprobar el estado de un alumno en distintas materias.
+Check the status of a student in different subjects.
 
-Para aprobar las materias un alumno debe tener:
-> 90% de asistencias, 
-> promedio en la materia >= 7 y 
-> 75% de los trabajos practicos entregados.
+To pass the subjects a student must have:
+> 90% attendance, 
+> average in the subject >= 7 and 
+> 75% of the practical work submitted passed with >=7.
  
-Se necesita:
-- Solicitar datos y decirle si aprueba o no.
-- Utilizar colores representativos en consola (por ejemplo si no aprueba en rojo)
+You need to:
+- Request data and tell him/her if he/she passes or not.
+- Use representative colors in console (e.g. if you do not pass in red).
 
 Problem B
-Una persona necesita organizar sus horarios a lo largo de 14 dias (336 horas) 
-Se organiza semanalmente: 24h para estudiar, 24hs para hacer tps, 56horas de trabajo y 8h para tareas del hogar.
+A person needs to organize his schedule over 14 days (336 hours). 
+It is organized weekly: 24hs to study, 24hs to do practical works, 56 hours of work and 8hs for housework.
 
-Se necesita:
-- Organizar las tareas diariamente.
-- Utilizar la consola para organizarlo.
-- Cada tarea no debe superar las 4hs.
+It is needed:
+- Organize tasks on a daily basis.
+- Use the console to organize it.
+- Each task should not exceed 4hs.
 
