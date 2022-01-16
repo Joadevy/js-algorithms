@@ -1,3 +1,8 @@
+/* 
+The script is for an weekly-schedule administrator with times for study, do practical works, work and do house activities.
+It has a preset stantard routine but the user can change it if desired.
+All the information for each day is displayed on the console.
+*/
 
 // Creating a class for the days of the week with their activities like atributtes.
 class daySchedule {
