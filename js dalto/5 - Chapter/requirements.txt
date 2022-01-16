@@ -3,7 +3,7 @@ Comprobar el estado de un alumno en distintas materias.
 
 Para aprobar las materias un alumno debe tener:
 > 90% de asistencias, 
-> promedio en la materia >+ 7 y 
+> promedio en la materia >= 7 y 
 > 75% de los trabajos practicos entregados.
  
 Se necesita:
