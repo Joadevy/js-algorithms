@@ -1,3 +1,10 @@
+/* The script prompts for the status of a student and shows if approves or not.
+The requirements for approve are:
+- Three exams with average score  >= 7.
+- 3 of 4 practical works approves with score >= 7. 
+- Amount of assistance >= 90.
+All the alerts/info are showing in console. */
+
 var scores= [];
 var practicalWorks = [];
 
