@@ -1,3 +1,5 @@
+
+// Creating a class for the days of the week with their activities like atributtes.
 class daySchedule {
     constructor(d,hs,hpw,hw,hh) {
         this.day = d;
@@ -7,12 +9,14 @@ class daySchedule {
         this.hourHouse = hh;
     } 
 
+    // The methods are for showing the info in console and make changes in the weekly-routine.
     showInfo () {
-        console.log(`%c${this.day}:`,"text-decoration:underline;font-size:16px;")
+        console.groupCollapsed(`%c${this.day}:`,"text-decoration:underline;font-size:16px;")
         console.log(`   %cToday's hours of study: `+ this.hourStudy,"color:cyan;")
         console.log(`   %cToday's hours of practical works: `+ this.hourPracticalWork,"color:violet;")
         console.log(`   %cToday's hours of work: `+ this.hourWork,"color:orange;")
         console.log(`   %cToday's hours of house activities: `+ this.hourHouse,"color:greenyellow;")
+        console.groupEnd()
     }
 
     setHourStudy(hrs) {
@@ -28,14 +32,16 @@ class daySchedule {
     }
 }
 
+// Pre-seting the days with a standard routine.
 const Monday = new daySchedule("Monday",4,0,8,0);
 const Tuesday = new daySchedule("Tuesday",4,4,8,0);
 const Wednesday = new daySchedule("Wednesday",4,4,8,4);
 const Thursday = new daySchedule("Thursday",4,4,8,2);
 const Friday = new daySchedule("Friday",4,4,8,2);
-const Saturday = new daySchedule("Saturday",4,4,8,3);
-const Sunday = new daySchedule("Sunday",0,4,8,3);
+const Saturday = new daySchedule("Saturday",4,4,0,3);
+const Sunday = new daySchedule("Sunday",0,4,0,3);
 
+// Pushing all the days into an array "week"
 var week = [Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday];
 
 const main = () => {
@@ -49,7 +55,7 @@ const main = () => {
     }
 }
 
-const makeChanges = () => {
+const makeChanges = () => { // If the user needs to make changes in their weekly-routine (If they want to, they have to change the hours of the activity of the all days)
     askStudy = prompt('Do you want to change your study-time? (y/n):  ');
     if ((askStudy == 'y') || (askStudy == 'Y')) {
         for (day in week) {
