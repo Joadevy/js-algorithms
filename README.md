@@ -9,7 +9,7 @@ Then I took the [Lucas Dalto's](https://www.youtube.com/c/soydalto) javascript c
 
 ## Files in this repository
 
---> js maxi course:
+> js maxi course:
 - 'Guia Array' is about practising with arrays structure.
 - 'Guia FOR' contains some exercises using loops FOR.
 - 'Guia WHILE' refers to practise with while loop.
@@ -19,8 +19,8 @@ Then I took the [Lucas Dalto's](https://www.youtube.com/c/soydalto) javascript c
 - 'Guia cadenas' is for exercises about arrays simulating the string behavior.
 - 'Guia matrices' is for some tests with matrices in js.
 
---> js dalto course:
-- 'js dalto' contains exercises for learning javascript by the base of the language. 
+> js dalto course:
+- 'js dalto' contains exercises for learning javascript by the base of the language. Through each chapter of the course I learned more about and walked deep into the language by resolving different challenges.
 
 
 
