@@ -21,7 +21,7 @@ Then I took the [Lucas Dalto's](https://www.youtube.com/c/soydalto) javascript c
 
 > js dalto course:
 - 'js dalto' contains exercises for learning javascript by the base of the language. Through each chapter of the course I learned more about and walked deep into the language by resolving different challenges.
-- '1 - Chapter' is about 
+- '1 - Chapter' is about conditional sentences and their sintaxis.
 
 
 
