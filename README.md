@@ -20,7 +20,7 @@ Then I took the [Lucas Dalto's](https://www.youtube.com/c/soydalto) javascript c
 
 > js dalto course:
 - '1 - Chapter' is about conditional sentences and their sintaxis.
-- '2 - Chapter' contains
+- '2 - Chapter' contains exercises using arrow functions and arrays.
 
 
 
