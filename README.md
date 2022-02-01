@@ -21,7 +21,7 @@ Then I took the [Lucas Dalto's](https://www.youtube.com/c/soydalto) javascript c
 > js dalto course:
 - '1 - Chapter' is about conditional sentences and their sintaxis.
 - '2 - Chapter' contains exercises using arrow functions and arrays.
-- '3 - Chapter'
+- '3 - Chapter' is about OOP and
 
 
 
