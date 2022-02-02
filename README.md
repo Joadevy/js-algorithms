@@ -22,7 +22,7 @@ Then I took the [Lucas Dalto's](https://www.youtube.com/c/soydalto) javascript c
 - '1 - Chapter' is about conditional sentences and their sintaxis.
 - '2 - Chapter' contains exercises using arrow functions and arrays.
 - '3 - Chapter' is about practice with OOP.
-- '4 - Chapter' uses arrays methods  
+- '4 - Chapter' uses arrays and strings methods. Also uses the math object
 
 
 
