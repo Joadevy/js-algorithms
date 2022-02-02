@@ -1,0 +1,6 @@
+Se necesita brindar informacion de 20 modelos de llaves para que un cerrajero 
+seleccione la adecuada para abrir una puerta.
+
+Crear un sistema con:
+> Indicar las 20 llaves posibles con imagenes para que el cliente seleccione su tipo de llave.
+> Una vez seleccionada, enviar los datos al servidor.
