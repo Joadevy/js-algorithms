@@ -1,7 +1,7 @@
 const container = document.querySelector(".container");
 
 function generateKey(name,model,price){ // Returns an array with the data of the key.
-    img = "<img src='genericKey.png' class='key-img'>";
+    img = "<img src='src/genericKey.png' class='key-img'>";
     name = `<h2>Key ${name}</h2>`;
     model = `<h3>Model ${model}</h3>`;
     price = `<p>Price: <b>${price}</b></p>`;
