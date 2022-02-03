@@ -21,6 +21,9 @@ body {
     margin: 20px;
     max-width: 150px;
     padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center
 }
 
 .flex-item:hover {
@@ -37,7 +40,6 @@ body {
 
 h2,h3,p {
     font-size: 16px;
-    text-align: center;
 }
 
 h2 {
@@ -56,5 +58,5 @@ p b {
 }
 
 .key-img {
-    width: 150px;
+    width: 120px;
 }
