@@ -1,6 +1,5 @@
 const container = document.querySelector(".container");
 
-
 function generateKey(name,model,price){ // Returns an array with the data of the key.
     img = "<img src='genericKey.png'>";
     name = `<h2>Key ${name}</h2>`;
@@ -9,7 +8,7 @@ function generateKey(name,model,price){ // Returns an array with the data of the
         return [img,name,model,price];
 }
 
-let documentFragment =  ;
+let documentFragment = document.createDocumentFragment();
 
 for(let i=0; i<20;i++) {
     let div = document.createElement("DIV");
@@ -20,5 +19,7 @@ for(let i=0; i<20;i++) {
         priceRandom = Math.round(priceRandom);
     const key = generateKey(i+1,modelRandom,priceRandom);
     div.innerHTML = key[0] + key[1] + key[2] + key[3];
-
+    documentFragment.appendChild(div);
 }
+
+container.appendChild(documentFragment);
