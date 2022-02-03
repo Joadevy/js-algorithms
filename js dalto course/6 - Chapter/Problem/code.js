@@ -13,10 +13,8 @@ let documentFragment = document.createDocumentFragment();
 for(let i=0; i<20;i++) {
     let div = document.createElement("DIV");
     div.classList.add(`item-${i}`,`flex-item`);
-    let modelRandom = Math.random()*1000;
-        modelRandom = Math.round(modelRandom);
-    let priceRandom = Math.random()*10+30;
-        priceRandom = Math.round(priceRandom);
+    let modelRandom = Math.round(Math.random()*1000);
+    let priceRandom = Math.round(Math.random()*10+30);
     const key = generateKey(i+1,modelRandom,priceRandom);
     div.innerHTML = key[0] + key[1] + key[2] + key[3];
     documentFragment.appendChild(div);
