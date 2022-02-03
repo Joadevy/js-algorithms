@@ -1,6 +1,6 @@
-Se necesita brindar informacion de 20 modelos de llaves para que un cerrajero 
-seleccione la adecuada para abrir una puerta.
+It is necessary to provide information on 20 key models for a locksmith to select the right one to open a door. 
+to select the right one to open a door.
 
-Crear un sistema con:
-> Indicar las 20 llaves posibles con imagenes para que el cliente seleccione su tipo de llave.
-> Una vez seleccionada, enviar los datos al servidor.
+Create a system with:
+> Indicate the 20 possible keys with images for the customer to select his key type.
+> Once selected, send the model data of the key to the server.
