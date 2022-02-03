@@ -1,3 +1,6 @@
+/* The script loads in the DOM 20 models of a product (keys in this case) and then saves the product-model clicked
+by the user so as to send this data to the server. */
+
 const container = document.querySelector(".container"); // Select the HTML div element with the class .container
 
 function generateKey(name,model,price){ // Returns an array with the HTML data of the key.
