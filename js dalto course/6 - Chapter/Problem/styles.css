@@ -60,3 +60,22 @@ p b {
 .key-img {
     width: 120px;
 }
+
+#button {
+    background-color: #333;
+    padding: .25rem;
+    color: blanchedalmond;
+    border: 1.5px solid rgb(47, 105, 47);;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: .5rem;
+    font-size: 18px;
+}
+
+#button:hover {
+    border-color:rgb(47, 105, 47);
+    box-shadow:0 0 10px 5px rgb(27, 51, 27);
+    cursor: pointer;
+}
