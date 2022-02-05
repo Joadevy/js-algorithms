@@ -1,0 +1,10 @@
+Problem A: an user needs to buy a computer with screen resolution of FULL HD (1.920 x 1.080 píxels)
+
+Create a system that checks:
+> The screen have at least 1920x1080 pixels.
+> Confirm if the user is sure to select it.
+
+Problem B: an user is navigating in full screen mode and can't be able to see the URL, protocol nor the pathname, etc.
+
+Create a system that shows:
+> Enough data to know about the website where the user is located.
