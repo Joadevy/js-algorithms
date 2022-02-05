@@ -3,4 +3,8 @@ to select the right one to open a door.
 
 Create a system with:
 > Indicate the 20 possible keys with images for the customer to select his key type.
+<<<<<<< HEAD
 > Once selected, send the model data of the key to the server.
+=======
+> Once selected, send the model data of the key to the server.
+>>>>>>> 5e6ecfbfb52ab8e8c75d508f2996da4b0d3e20ef
