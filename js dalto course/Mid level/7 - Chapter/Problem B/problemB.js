@@ -1,7 +1,12 @@
+// 
+
 let URL = window.location.href;
 let protocol = window.location.protocol;
 let hostName = window.location.hostname;
+let pathName = window.location.pathname;
 
-let html = (`This website is called: <b>${window.location.hostname}</b>.<br/>`);
-html += (`Has a protocol <b>${window.location.protocol}</b><br/>and the URL is <b>${window.location.href}</b>.`);
+let html = (`This website is called: <b>${hostName}</b>.<br/>`);
+html += (`Has a protocol <b>${protocol}</b><br/>`)
+html+= (`The URL is <b>${URL}</b>`);
+html += (` and the pathname is <b>${pathName}</b>`);
 document.write(html);
