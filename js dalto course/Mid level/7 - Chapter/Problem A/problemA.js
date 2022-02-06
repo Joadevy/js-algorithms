@@ -15,5 +15,5 @@ const purchaseAlert = (trueFalse) => { // Compares the client decision, if it is
     }
 } 
 
-let decision =  window.confirm('Would you like to adquire it? It has a ' + window.screen.availWidth + ' x ' + window.screen.availHeight + ' res');
+let decision =  window.confirm('Would you like to adquire it? It has a ' + window.screen.width + ' x ' + window.screen.height + ' res');
 purchaseAlert(decision);
