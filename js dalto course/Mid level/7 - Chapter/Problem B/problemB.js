@@ -1,4 +1,4 @@
-// 
+// It's a simple script that shows info about the actual website using the window object.
 
 let URL = window.location.href;
 let protocol = window.location.protocol;
