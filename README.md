@@ -20,7 +20,7 @@ Then I took the [Lucas Dalto's](https://www.youtube.com/c/soydalto) javascript c
 
 > js dalto course:
 - 'Junior level' contains the different exercises about the introduction course of the series.
-- Mid level contains the exercises about the mid-level course of this serie.
+- 'Mid level' contains the exercises about the mid-level course of this serie.
 
 
 ## Acknowledgements
