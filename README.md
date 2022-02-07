@@ -1,5 +1,5 @@
 
-# Js Algorithms
+# js-algorithms
 
 This repository is for containing different practices of algorithms in javascript so as to start working with the language and evolving on it.
 Firstly I took the [maxiprograma's](https://maxiprograma.com/) introductory guide for algorithms and his exercises and I adappted it for start learning javascript. 
