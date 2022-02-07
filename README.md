@@ -19,7 +19,7 @@ Then I took the [Lucas Dalto's](https://www.youtube.com/c/soydalto) javascript c
 - 'Guia matrices' is for some tests with matrices in js.
 
 > js dalto course:
-- Junior level contains the different exercises about the introduction course of the series.
+- 'Junior level' contains the different exercises about the introduction course of the series.
 - Mid level contains the exercises about the mid-level course of this serie.
 
 
