@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333;
+}
+
+
+header h1 {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: darkviolet;
+    color: white;
+    margin-bottom: .5rem;
+}
+
+.grid-container {
+    display: grid;
+    place-content: center;
+    grid-template-rows: 50px;
+    grid-template-columns: repeat(4,minmax(min-content,max-content));
+    grid-auto-rows: 50px;
+    gap:.1rem;
+}
+
+.grid-container .grid-item {
+    padding: 10px;
+    border: 1px solid darkviolet;
+    border-radius: 2.5px;
+    margin: 5px;
+    color: whitesmoke;
+}
+
+.selected-week{
+    background-color: #333;
+    color: whitesmoke;
+    border: none;
+    outline: none;
+}
+
+.confirm-button{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 1rem;
+    background-color: #333;
+    border: .5px solid darkviolet;
+    border-radius: 5px;
+    padding: .25rem;
+    color: whitesmoke;
+    transition: background-color .25s;
+}
+
+.confirm-button:hover {
+    background-color: darkviolet;
+    border: 1px solid whitesmoke;
+    cursor: pointer;
+    opacity: .5;
+}
