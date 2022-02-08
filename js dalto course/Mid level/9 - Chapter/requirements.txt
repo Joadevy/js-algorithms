@@ -4,3 +4,11 @@ Create a system:
 - The form must contain name, email and subject for the exam.
 - Validate the email and real names.
 - Send the polished data to the server
+
+Problem B: professors needs to display the strudent's inscriptions.
+
+Create a system:
+- Nice-visual interface
+- Contains structured data.
+- Select when the student gonna do the test.
+- Upload and replace the data of the test date.
