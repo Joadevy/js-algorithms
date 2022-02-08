@@ -1,5 +1,5 @@
 
-# Js Algorithms
+# js-algorithms
 
 This repository is for containing different practices of algorithms in javascript so as to start working with the language and evolving on it.
 Firstly I took the [maxiprograma's](https://maxiprograma.com/) introductory guide for algorithms and his exercises and I adappted it for start learning javascript. 
@@ -19,8 +19,8 @@ Then I took the [Lucas Dalto's](https://www.youtube.com/c/soydalto) javascript c
 - 'Guia matrices' is for some tests with matrices in js.
 
 > js dalto course:
-- Junior level contains the different exercises about the introduction course of the series.
-- Mid level contains the exercises about the mid-level course of the series.
+- 'Junior level' contains the different exercises about the introduction course of the series.
+- 'Mid level' contains the exercises about the mid-level course of this serie.
 
 
 ## Acknowledgements
