@@ -9,12 +9,16 @@ button.addEventListener("click", (e)=> {
     e.preventDefault();
     let valid = validate();
     if (valid != true) {
-        errorMessageDiv.textContent = "";
-        let elements = document.querySelectorAll(".week");
-        let selectedWeeks = document.querySelectorAll(".selected-week");
-        for (let element in elements) {
-            let week = elements[element];
-            week.innerHTML = selectedWeeks[element].value;
+        let confirmation = confirm("Are you sure to establish these weeks?");
+        if(confirmation == true) {
+            errorMessageDiv.textContent = "";
+            let elements = document.querySelectorAll(".week");
+            let selectedWeeks = document.querySelectorAll(".selected-week");
+            for (let element in elements) {
+                let week = elements[element];
+                week.innerHTML = selectedWeeks[element].value;
+            }
+            document.body.removeChild(button);
         }
     } else {
         errorMessageDiv.classList.add('showError');
