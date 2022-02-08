@@ -1,0 +1,6 @@
+Problem A: a student needs to submit a form to register in subjects for a final exams.
+
+Create a system:
+- The form must contain name, email and subject for the exam.
+- Validate the email and real names.
+- Send the polished data to the server
