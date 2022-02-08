@@ -47,7 +47,8 @@ button.addEventListener("click",(e)=>{
         } else {
             result.classList.add('green');
             result.classList.remove('red');
-            result.textContent = "Inscription succesfully submitted"; // Shows info to the user
+            let inscriptioNumber = Math.round(Math.random()*10000); // Generates a random inscription number.
+            result.textContent = `Inscription succesfully submitted, your IN is: ${inscriptioNumber}`; // Shows info to the user
         }
 })
 
