@@ -4,18 +4,17 @@ const button = document.querySelector(".confirm-button");
 // Selecting the error-container
 const errorMessageDiv = document.getElementById("error-container");
 
-// Adding the listener for click to execute changes in the week for the exam.
+// Adding the listener for click to validate and execute changes in the week for the exam.
 button.addEventListener("click", (e)=> {
     e.preventDefault();
     let valid = validate();
     if (valid != true) {
-        errorMessageDiv.classList.remove('showError');
+        errorMessageDiv.textContent = "";
         let elements = document.querySelectorAll(".week");
         let selectedWeeks = document.querySelectorAll(".selected-week");
         for (let element in elements) {
             let week = elements[element];
             week.innerHTML = selectedWeeks[element].value;
-            errorMessageDiv.textContent = "You need to select all the weeks!";
         }
     } else {
         errorMessageDiv.classList.add('showError');
@@ -23,6 +22,7 @@ button.addEventListener("click", (e)=> {
     }
 })
 
+// Validates if all the weeks-option are selected.
 const validate = () => {
     let weeks = document.querySelectorAll(".selected-week");
     for (let week in weeks) {
@@ -34,7 +34,7 @@ const validate = () => {
 }
 
 
-// Creating an array with some objects.
+// Creating an array with some objects that are students who will take final exams.
 let students = [{
     name: "Hector Herrera",
     email: "HectorHerrera123@hotmail.com",
@@ -53,6 +53,7 @@ let students = [{
     subject:"Maths",
 }]
 
+// Creating the structure that select the data of the 'students' object and adds each one as grid-items.
 for (let student in students) {
    let data = students[student];
    let name = data["name"];
