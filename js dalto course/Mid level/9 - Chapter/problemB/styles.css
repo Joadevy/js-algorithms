@@ -59,3 +59,11 @@ header h1 {
     cursor: pointer;
     opacity: .5;
 }
+
+.showError {
+    margin-top: 1rem;
+    text-decoration: underline;
+    text-align: center;
+    color: rgb(255, 85, 85);
+    font-size: 20px;
+}
