@@ -11,4 +11,4 @@ Create a system:
 - Nice-visual interface
 - Contains structured data.
 - Select when the student gonna do the test.
-- Upload and replace the data of the test date.
+- Update and replace the data of the test date.
