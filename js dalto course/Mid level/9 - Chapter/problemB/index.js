@@ -4,6 +4,9 @@ const button = document.querySelector(".confirm-button");
 // Selecting the error-container
 const errorMessageDiv = document.getElementById("error-container");
 
+// Selecting the grid-container
+const container = document.querySelector(".grid-container");
+
 // Adding the listener for click to validate (and confirm) and execute changes in the week for the exam.
 button.addEventListener("click", (e)=> {
     e.preventDefault();
@@ -57,13 +60,14 @@ let students = [{
     subject:"Maths",
 }]
 
+let htmlCode = "";
 // Creating the structure that select the data of the 'students' object and adds each one as grid-items.
 for (let student in students) {
    let data = students[student];
    let name = data["name"];
    let email = data["email"];
    let subject = data["subject"];
-   let htmlCode = `
+   htmlCode += `
    <div class="grid-item name">${name}</div>
    <div class="grid-item mail">${email}</div>
    <div class="grid-item subject">${subject}</div>
@@ -74,5 +78,7 @@ for (let student in students) {
             <option value="2nd week">Second week</option>
         </select>
     </div>`
-    document.querySelector('.grid-container').innerHTML += htmlCode;
 }
+
+// Assigning all the data to the DOM.
+container.innerHTML = htmlCode;
