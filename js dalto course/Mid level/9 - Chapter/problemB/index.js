@@ -4,7 +4,7 @@ const button = document.querySelector(".confirm-button");
 // Selecting the error-container
 const errorMessageDiv = document.getElementById("error-container");
 
-// Adding the listener for click to validate and execute changes in the week for the exam.
+// Adding the listener for click to validate (and confirm) and execute changes in the week for the exam.
 button.addEventListener("click", (e)=> {
     e.preventDefault();
     let valid = validate();
