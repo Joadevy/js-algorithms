@@ -55,3 +55,8 @@ form>input[type="submit"]:hover {
     text-align: center;
     color: red;
 }
+
+.green {
+    text-align: center;
+    color: green;
+}

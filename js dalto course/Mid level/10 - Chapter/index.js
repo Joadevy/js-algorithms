@@ -2,18 +2,32 @@ const studentName = document.querySelector('.student');
 const submitButton = document.getElementById("submit");
 const score = document.getElementById("score");
 const result = document.querySelector('.result');
+let student = 0;
 
 
 submitButton.addEventListener('click', (e)=> {
-    e.preventDefault();
-    let valid = validateScore();
-    if (valid == true) {
-        result.textContent = ''; // *********** remove it then 
-        let averageScores = calculateAverage();
-    } else {
-        result.classList.add('red');
-        result.textContent = 'You need to introduce a number!';
-    }
+        e.preventDefault();
+        let valid = validateScore();
+        if (valid == true) {
+             // *********** remove it then 
+            let averageScores = calculateAverage(student);
+            if (averageScores >= 7) {
+                result.classList.remove('red');
+                result.classList.add('green');
+                result.innerHTML = `${students[student].name} <span>approves!</span>`;
+            } else {
+                result.classList.remove('green');
+                result.classList.add('red');
+                result.innerHTML = `${students[student].name} <span>disapproves!</span>`;
+            }
+            student++;
+            score.value = '';
+            studentName.innerHTML = `Student's name: <span>${students[student].name}</span>`;
+        } else {
+            result.classList.remove('green');
+            result.classList.add('red');
+            result.textContent = 'You need to introduce a number!';
+        }
 })
 
 const validateScore = () => {
@@ -24,8 +38,8 @@ const validateScore = () => {
     }
 } 
 
-const calculateAverage = () => {
-
+const calculateAverage = (student) => {
+    return((parseInt(score.value) + students[student]["scoreOne"]+ students[student]["scoreTwo"])/ 3); // Transform the score.value in an integer (like the professors do)
 }
 
 let students = [{
@@ -37,7 +51,7 @@ let students = [{
     scoreOne: 9,
     scoreTwo: 7,
 },{
-    name: 'Horacio Rodriguez',
+    name: 'Lisandro Romero',
     scoreOne: 4,
     scoreTwo: 8,
 },{
@@ -50,6 +64,6 @@ let students = [{
     scoreTwo: 6,
 }];
 
-for (let student in students) {
-    studentName.innerHTML = `Student's name: <span>${students[student].name}</span>`; 
-}
+studentName.innerHTML = `Student's name: <span>${students[0].name}</span>`;
+
+
