@@ -10,21 +10,17 @@ submitButton.addEventListener('click', (e)=> {
         let valid = validateScore();
         if (valid == true) {
              // *********** remove it then 
+            result.textContent = '';
             let averageScores = calculateAverage(student);
             if (averageScores >= 7) {
-                result.classList.remove('red');
-                result.classList.add('green');
-                result.innerHTML = `${students[student].name} <span>approves!</span>`;
+                alert(`${students[student].name} approves!`);
             } else {
-                result.classList.remove('green');
-                result.classList.add('red');
-                result.innerHTML = `${students[student].name} <span>disapproves!</span>`;
+                alert(`${students[student].name} disapproves!`);
             }
             student++;
             score.value = '';
             studentName.innerHTML = `Student's name: <span>${students[student].name}</span>`;
         } else {
-            result.classList.remove('green');
             result.classList.add('red');
             result.textContent = 'You need to introduce a number!';
         }
