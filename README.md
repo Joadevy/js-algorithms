@@ -3,7 +3,7 @@
 
 This repository is for containing different practices of algorithms in javascript so as to start working with the language and evolving on it.
 Firstly I took the [maxiprograma's](https://maxiprograma.com/) introductory guide for algorithms and his exercises and I adappted it for start learning javascript. 
-Then I took the [Lucas Dalto's](https://www.youtube.com/c/soydalto) javascript course (junior abd mid level) and did the exercises proposed. It contains exercises for learning javascript by the base of the language. Through each chapter of the course I learned more about and walked deep into the language by resolving different challenges.
+Then I took the [Lucas Dalto's](https://www.youtube.com/c/soydalto) javascript course (junior and mid level) and did the exercises proposed. It contains exercises for learning javascript by the base of the language. Through each chapter of the course I learned more about and walked deep into the language by resolving different challenges.
 
 
 ## Files in this repository
