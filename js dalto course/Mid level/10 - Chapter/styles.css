@@ -60,3 +60,9 @@ form>input[type="submit"]:hover {
     text-align: center;
     color: green;
 }
+
+@media screen and (max-width:890px) {
+    main {
+        width: 90%; 
+    }
+}
