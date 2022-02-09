@@ -1,0 +1,6 @@
+> Create a small system for recording test scores.
+The system needs:
+- Load scores
+- Validate that there are no errors.
+- Average score-test with 2 past practical work scores.
+- If the average score is >= 7/10, the student passes.
