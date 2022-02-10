@@ -26,6 +26,7 @@ submitButton.addEventListener('click', (e)=> {
         }
 })
 
+// Validates 
 const validateScore = () => {
     if (score.value/0 == Infinity) { // This cannot accept the score 0 because 0/0 != infinity (but also nobody gets a 0 in a test)
         return true;
@@ -34,6 +35,7 @@ const validateScore = () => {
     }
 } 
 
+// Calculates the average between the 2 practical works + the test-score entered.
 const calculateAverage = (student) => {
     return((parseInt(score.value) + students[student]["scoreOne"]+ students[student]["scoreTwo"])/ 3); // Transform the score.value in an integer (like the professors do)
 }
@@ -60,6 +62,10 @@ let students = [{
     scoreTwo: 6,
 }];
 
-studentName.innerHTML = `Student's name: <span>${students[0].name}</span>`;
+// Using try & catch
+try { studentName.innerHTML = `Student's name: <span>${students[0].name}</span>`; }
+catch (error) {
+    console.log('Failed to load the student name, error info: ', error.info);
+}
 
 
