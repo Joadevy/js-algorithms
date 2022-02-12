@@ -26,6 +26,6 @@ Then I took the [Lucas Dalto's](https://www.youtube.com/c/soydalto) javascript c
 ## Acknowledgements
 
  - [Awesome introductory algorithm exercises](https://maxiprograma.com/)
- - [Really good video for the first steps in JS](https://www.youtube.com/watch?v=z95mZVUcJ-E)
- - [Next steps in JS to master](https://www.youtube.com/watch?v=xOinGb2MZSk)
+ - [Really good video for the first steps in JS to master (junior level)](https://www.youtube.com/watch?v=z95mZVUcJ-E)
+ - [Next steps in JS to master (mid level)](https://www.youtube.com/watch?v=xOinGb2MZSk)
 
