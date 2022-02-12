@@ -9,11 +9,21 @@ body {
     font-family: sans-serif;
 }
 
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: rgb(11, 241, 192);
+    font-size: 24px;
+    margin: .75rem 0 .5rem 0;
+}
+
 .subjects-container {
     width: 90%;
     border: 1px solid rgb(11, 241, 192);
     background-color: #ccc;
     padding: 2px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
 }
 
 .subject {

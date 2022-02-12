@@ -1,4 +1,4 @@
-const subjectContainerHTML = document.querySelector(".subject-container");
+const subjectContainerHTML = document.querySelector(".subjects-container");
 
 // This info is hipothetically on a server.
 const subjects = [
@@ -13,8 +13,8 @@ const subjects = [
     {name: "Calculus 2",
     score: 8},
     {name: "Probability and Statistics",
-    score: 10},
-    {name: "Discrete Structures 1",
+    score: 9},
+    {name: "Discrete Structures",
     score: 7},
     {name: "Phisics 3",
     score: 9},
@@ -40,14 +40,22 @@ const getSubject = (id) => {
 }
 
 /* Displays all the subjects in order (as there are in the object). Uses an async because the response-time of the server
-change constatly(because it's simulated with Math.random) so does not allow to show it in the correct order without using
+change constantly(because it's simulated with Math.random) so does not allow to show it in the correct order without using
 an async function.*/
 const returnSubject = async() => {
-    let arraySubjects = []
+    let arraySubjects = [];
+    let newHTMLCode = '';
+    subjectContainerHTML.innerHTML = "Loading student's subjects, please wait.";
+    // For each subject in the array subjects, await for the resolve of each promise with the subject and saves the return in another array.
     for (let subject in subjects) {
-        arraySubjects[subject] = getSubject(subject);
-        arraySubjects[subject].then(subj => console.log(subj));
+        arraySubjects[subject] = await getSubject(subject);
+        newHTMLCode += `
+        <div class="subject">
+            <div class="name">${arraySubjects[subject].name}</div>
+            <div class="score">${arraySubjects[subject].score}</div>
+        </div>`; 
     }
+    subjectContainerHTML.innerHTML = newHTMLCode;
 }
 
 returnSubject();
