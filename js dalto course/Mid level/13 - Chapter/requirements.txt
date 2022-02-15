@@ -1,0 +1,6 @@
+They need to know how many people will course this four-month period.
+This info is located in an API (simulated by a local file txt)
+
+Create a system with:
+- Allow access to the data.
+- Show in order (using await/async) in a web-site.
