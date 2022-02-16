@@ -1,0 +1,5 @@
+{
+    "amountofpeople" : 235,
+    "approved" : 155,
+    "failed" : 80
+}

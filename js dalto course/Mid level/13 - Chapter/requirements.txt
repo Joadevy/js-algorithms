@@ -1,6 +1,6 @@
-They need to know how many people will course this four-month period.
+They need to know how many people coursed the past fourth-month period and the amount of approved/failed in that.
 This info is located in an API (simulated by a local file txt)
 
 Create a system with:
-- Allow access to the data.
+- Allow access to the data using requests.
 - Show in order (using await/async) in a web-site.
